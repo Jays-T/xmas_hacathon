@@ -43,15 +43,15 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+
     'django.contrib.sites',
-    # custom apps
-
-    'northpole',
-
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
 
+    # custom apps
+
+    'northpole',
 
 
 ]
@@ -71,7 +71,10 @@ ROOT_URLCONF = 'the_hangry_elf.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'templates', 'allauth'),
+            ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
