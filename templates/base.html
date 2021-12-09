@@ -27,13 +27,26 @@
     {% block extrajs %}
     {% endblock %}
 
-    <title>The Hangry Elf</title>
+    <title>The Hangry Elf {% block extratitle %}{% endblock %}</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-
-    {% block content %}
-    {% endblock %}
+    <div class="container-fluid fixed-top">
+        <!--
+          Navbar goes here
+        -->
+    </div>
+    <div class="message-container">
+        {% if messages %}
+        {% endif %}
+    </div>
+    <!--
+        Will render the content from each template
+    -->
+    <div class="container">
+        <h1>Hello, world!</h1>
+        {% block content %}
+        {% endblock %}
+    </div>
 
     {% block postloadjs %}
     {% endblock %}
