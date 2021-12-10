@@ -1,8 +1,8 @@
-#The Hangry Elf#
+# The Hangry Elf
 
-##Project: Code Institute December 2021 Hackathon: Happy Holidays##
+## Project: Code Institute December 2021 Hackathon: Happy Holidays
 
-##Introduction##
+## Introduction
 
 This website is the project created by John Traas, Claudia Lai, Marialena Livathinopoulou, David Paul Thompson and Adam Boley, collectively the team called The Newbies, since this is the first hackathon project undertaken by each member. 
 
