@@ -52,8 +52,7 @@ INSTALLED_APPS = [
     # custom apps
 
     'northpole',
-
-
+    'profiles',
 ]
 
 MIDDLEWARE = [
