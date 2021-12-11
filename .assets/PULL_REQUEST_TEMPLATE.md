@@ -11,3 +11,6 @@
 ## Screenshots
 - IF YOU HAVE ANY SCREENSHOTS, INCLUDE THEM HERE.
 - IF YOU HAVE NO SCREENSHOTS, ENTER 'None'
+
+## Confirm with PR creator before merging?
+- YES/NO
