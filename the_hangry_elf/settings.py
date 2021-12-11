@@ -30,6 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEVELOPMENT')
 
+
 ALLOWED_HOSTS = [os.environ.get('HEROKU_URL'), 'localhost']
 
 
@@ -44,11 +45,13 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'crispy_forms',
 
     'django.contrib.sites',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'django_better_admin_arrayfield',
 
     # custom apps
 
@@ -68,6 +71,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'the_hangry_elf.urls'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
     {
@@ -174,10 +179,11 @@ CLOUDINARY_STORAGE = {
 }
 
 MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CSRF_TRUSTED_ORIGINS = [os.environ.get('ORIGIN_TO_TRUST'), os.environ.get('HEROKU_URL')]  # noqa: E501
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
