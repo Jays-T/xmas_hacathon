@@ -14,8 +14,8 @@ class Recipe(models.Model):
     description = models.CharField(max_length=500, null=True, blank=True)
     author = models.CharField(max_length=255, null=True, blank=True)
     url = models.URLField(max_length=1024, null=True, blank=True)
-    ingredients = ArrayField(models.CharField(max_length=200, blank=True))  # noqa: E501
-    method = ArrayField(models.CharField(max_length=200, blank=True))  # noqa: E501
+    ingredients = ArrayField(models.CharField(max_length=500, blank=True))  # noqa: E501
+    method = ArrayField(models.CharField(max_length=500, blank=True))  # noqa: E501
 
     def __str__(self):
         """ Self Init """
