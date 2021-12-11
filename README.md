@@ -49,19 +49,19 @@ The wireframes are below:
 
 Landing page:
 
-![Landing Page](Homepage.png)
+[Landing Page](<img src="https://github.com/Anelairam/xmas_hacathon/blob/main/media/wireframes/Homepage.png">)
 
 Advent Calendar page:
 
-![Advent Calendar page](GamePage.png)
+[Advent Calendar page](<img src="https://github.com/Anelairam/xmas_hacathon/blob/main/media/wireframes/GamePage.png">)
 
 Unwrapping animation:
 
-![Unwrapping animation](GameAnimation.png)
+[Unwrapping animation](<img src="https://github.com/Anelairam/xmas_hacathon/blob/main/media/wireframes/GameAnimation.png">)
 
 Unwrapped recipe:
 
-![Unwrapped recipe](CardAction.png)
+[Unwrapped recipe](<img src="https://github.com/Anelairam/xmas_hacathon/blob/main/media/wireframes/CardAction.png">)
 
 ## Features
 
