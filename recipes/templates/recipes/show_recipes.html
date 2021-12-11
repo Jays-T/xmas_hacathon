@@ -19,17 +19,31 @@
             Can you complete the challenge in time and save Christmas?
             
         </p>
+
+        
         {% for recipe in recipes %}
-        <h2>{{ recipe.title }}</h2>
-            <h3>Ingredients:</h3>
+        
+        <!-- Start single recipe card HTML -->
+        {{ recipe.title }}
+        {{ recipe.description }}
+        {{ recipe.author }}
+        {{ recipe.url }}
+
+            <!-- To Show Ingredients List -->
             {% for ingredient in recipe.ingredients %}
-            <h6>{{ ingredient }}</h6>
+
+                {{ ingredient }}
+
             {% endfor %}
 
-            <h3>Method:</h3>
+            <!-- To Show List of recipe cooking methods -->
             {% for method in recipe.method %}
-            <h6>{{ method }}</h6>
+
+                {{ method }}
+
             {% endfor %}
+        <!-- End single recipe card HTML-->
+        
         {% endfor %}
 
     </div>
