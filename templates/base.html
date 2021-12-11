@@ -31,60 +31,61 @@
     <title>The Hangry Elf {% block extratitle %}{% endblock %}</title>
   </head>
   <body>
-<section class="container d-flex justify-content-center align-items-center">
-  <div class="row">
-    <div class="col col-12">
-      <div class="container-fluid fixed-top">
-      <!--
-      Navbar goes here
-      -->
-      <!-- BELOW IS JUST TEMPORARY LINKS THAT NEED TO BE INCLUDED IN THE NAVBAR-->
-        <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-          <li>
-            <a href="{% url 'index' %}" class="">The Hangry Elf</a>
-          </li>
-          {% if request.user.is_authenticated %}
-            <li>
-              <a href="{% url 'profile' %}" class="">Save Christmas!</a>
-            </li>
-            <li>
-              <a href="{% url 'account_logout' %}" class="">Logout</a>
-            </li>
-            <li>
-              <a href="{% url 'calendar' %}" class="">Calendar</a>
-            </li>
-            {% else %}
-            <li>
-              <a href="{% url 'account_signup' %}" class="">Register</a>
-            </li>
-            <li>
-              <a href="{% url 'account_login' %}" class="">Login</a>
-            </li>
-            <li>
-              <a href="{% url 'calendar' %}" class="">Calendar</a>
-            </li>
+    <section class="container d-flex justify-content-center align-items-center">
+      <section class="snow_fx">
+      <div class="row">
+        <div class="col col-12">
+          <div class="container-fluid fixed-top">
+          <!--
+          Navbar goes here
+          -->
+          <!-- BELOW IS JUST TEMPORARY LINKS THAT NEED TO BE INCLUDED IN THE NAVBAR-->
+            <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+              <li>
+                <a href="{% url 'index' %}" class="">The Hangry Elf</a>
+              </li>
+              {% if request.user.is_authenticated %}
+                <li>
+                  <a href="{% url 'profile' %}" class="">Save Christmas!</a>
+                </li>
+                <li>
+                  <a href="{% url 'account_logout' %}" class="">Logout</a>
+                </li>
+                <li>
+                  <a href="{% url 'calendar' %}" class="">Calendar</a>
+                </li>
+                {% else %}
+                <li>
+                  <a href="{% url 'account_signup' %}" class="">Register</a>
+                </li>
+                <li>
+                  <a href="{% url 'account_login' %}" class="">Login</a>
+                </li>
+                <li>
+                  <a href="{% url 'calendar' %}" class="">Calendar</a>
+                </li>
+              {% endif %}
+            </ul>
+          </div>
+          <div class="message-container">
+          {% if messages %}
           {% endif %}
-        </ul>
+          </div>
+          <!--
+          Will render the content from each template
+          -->
+          <div class="container">
+          {% block content %}
+          {% endblock %}
+          </div>
+          
+        </div>
       </div>
-      <div class="message-container">
-      {% if messages %}
-      {% endif %}
-      </div>
-      <!--
-      Will render the content from each template
-      -->
-      <div class="container">
-      {% block content %}
-      {% endblock %}
-      </div>
-      
-    </div>
-  </div>
-  <footer>
-    Footer goes here
-  </footer>
-
-</section>
+      <footer>
+        Footer goes here
+      </footer>
+    </section>
+    </section>
 
     {% block postloadjs %}
     {% endblock %}
