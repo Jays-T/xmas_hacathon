@@ -50,12 +50,18 @@
             <li>
               <a href="{% url 'account_logout' %}" class="">Logout</a>
             </li>
+            <li>
+              <a href="{% url 'calendar' %}" class="">Calendar</a>
+            </li>
             {% else %}
             <li>
               <a href="{% url 'account_signup' %}" class="">Register</a>
             </li>
             <li>
               <a href="{% url 'account_login' %}" class="">Login</a>
+            </li>
+            <li>
+              <a href="{% url 'calendar' %}" class="">Calendar</a>
             </li>
           {% endif %}
         </ul>
