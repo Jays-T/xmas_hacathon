@@ -1,0 +1,14 @@
+[
+    {
+    "model": "recipes.recipe", 
+    "pk": 1, 
+    "fields": {
+        "title": "Test", 
+        "description": "test", 
+        "author": "test", 
+        "url": null, 
+        "ingredients": "[\"2 eggs\", \"1 cup yoghurt\"]", 
+        "method": "[\"fry eggs\", \"eat yoghurt\"]"
+        }
+    }
+]
