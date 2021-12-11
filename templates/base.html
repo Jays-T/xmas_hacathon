@@ -38,6 +38,27 @@
       <!--
       Navbar goes here
       -->
+      <!-- BELOW IS JUST TEMPORARY LINKS THAT NEED TO BE INCLUDED IN THE NAVBAR-->
+        <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+          <li>
+            <a href="{% url 'index' %}" class="">The Hangry Elf</a>
+          </li>
+          {% if request.user.is_authenticated %}
+            <li>
+              <a href="{% url 'profile' %}" class="">Save Christmas!</a>
+            </li>
+            <li>
+              <a href="{% url 'account_logout' %}" class="">Logout</a>
+            </li>
+            {% else %}
+            <li>
+              <a href="{% url 'account_signup' %}" class="">Register</a>
+            </li>
+            <li>
+              <a href="{% url 'account_login' %}" class="">Login</a>
+            </li>
+          {% endif %}
+        </ul>
       </div>
       <div class="message-container">
       {% if messages %}
@@ -47,10 +68,10 @@
       Will render the content from each template
       -->
       <div class="container">
-      <h1>Hello, world!</h1>
       {% block content %}
       {% endblock %}
       </div>
+      
     </div>
   </div>
 </section>
