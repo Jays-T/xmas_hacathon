@@ -20,5 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
     path('', include('northpole.urls')),
-    path('profiles/', include('profiles.urls'))
+    # path('profiles/', include('profiles.urls'))
 ]
