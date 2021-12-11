@@ -23,5 +23,6 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('', include('northpole.urls')),
     path('feed-the-elves/', include('profiles.urls')),
-    path('add_recipe/', include('recipes.urls'))
+    path('add_recipe/', include('recipes.urls')),
+    path('calendar/', include('advent_calendar.urls'))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

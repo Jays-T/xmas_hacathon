@@ -58,7 +58,7 @@ INSTALLED_APPS = [
     'northpole',
     'profiles',
     'recipes',
-    'advent_calendar'
+    'advent_calendar',
 ]
 
 MIDDLEWARE = [
