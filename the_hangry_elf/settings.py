@@ -54,7 +54,7 @@ INSTALLED_APPS = [
 
     'northpole',
     'profiles',
-    
+    'recipes',
 ]
 
 MIDDLEWARE = [
@@ -126,6 +126,9 @@ else:
         }
     }
 
+# DATABASES = {
+#     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -177,4 +180,4 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-CSRF_TRUSTED_ORIGINS = ['https://8000-lime-koi-3ilnb0r0.ws-eu21.gitpod.io/']
+CSRF_TRUSTED_ORIGINS = [os.environ.get('ORIGIN_TO_TRUST')]
