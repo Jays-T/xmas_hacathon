@@ -53,13 +53,13 @@ The Wireframe.cc app was used to plan out the basic design and look of the proje
 
 Links to the wireframes are below:
 
-Landing page: https://github.com/Anelairam/xmas_hacathon/blob/main/media/wireframes/Homepage.png
+[Landing page](https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/wireframes/Homepage.png)
 
-Advent Calendar page: https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/wireframes/GamePage.png
+[Advent Calendar page](https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/wireframes/GamePage.png)
 
-Unwrapping animation: https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/wireframes/GameAnimation.png
+[Unwrapping animation](https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/wireframes/GameAnimation.png)
 
-Unwrapped recipe: https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/wireframes/CardAction.png
+[Unwrapped recipe](https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/wireframes/CardAction.png)
 
 ## Features
 
@@ -76,6 +76,7 @@ Platforms used:
 - Google Docs: The team created and shared a Google Doc to note down ideas and store recipe links.
 - Font Awesome: Font Awesone was used for the site's icons.
 - Google Fonts: Google Fonts was used for the site's font. The Mountains of Christmas font was used.
+- Cloudinary: Used to host the site's static files.
 
 ## Testing
 
@@ -123,19 +124,23 @@ Platforms used:
 #### Returning visitors, once logged in, must be able to see previously unlocked recipes
 - 
 
-### Platform Testing
+### Platform Testing - Desktop / Laptop
 
 #### Google Chrome
+- All tested and working correctly
 
 #### Microsoft Edge
+- 
 
 #### Safari
+-
 
 #### Mozilla Firefox
+-
 
 ## Deployment
 
-The project was deployed using Heroku
+The project was deployed using Heroku. The static files were hosted on Cloudinary. 
 
 ## Credits
 
@@ -155,7 +160,9 @@ The Winner of the Code Institute November 2021 Hackathon was agreed by all team 
 
 ### Media 
 
-- music used, include website, composer/author
+- Track name: A Christmas Dance
+- Artist: Arthur Benson
+- Retrieved from: [Epidemic Sound](https://www.epidemicsound.com/track/yRFwYp70k9/)
 
 ### Acknowledgements
 
