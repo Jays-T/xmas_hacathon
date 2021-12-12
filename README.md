@@ -49,19 +49,19 @@ The wireframes are below:
 
 Landing page:
 
-<img src="https://github.com/Anelairam/xmas_hacathon/blob/main/media/wireframes/Homepage.png">
+<img src="https://github.com/tomod24/xmas_hacathon/blob/main/media/Homepage.png">
 
 Advent Calendar page:
 
-<img src="https://github.com/Anelairam/xmas_hacathon/blob/main/media/wireframes/GamePage.png">
+<img src="https://github.com/tomod24/xmas_hacathon/blob/main/media/GamePage.png">
 
 Unwrapping animation:
 
-<img src="https://github.com/Anelairam/xmas_hacathon/blob/main/media/wireframes/GameAnimation.png">
+<img src="https://github.com/tomod24/xmas_hacathon/blob/main/media/GameAnimation.png">
 
 Unwrapped recipe:
 
-<img src="https://github.com/Anelairam/xmas_hacathon/blob/main/media/wireframes/CardAction.png">
+<img src="https://github.com/tomod24/xmas_hacathon/blob/main/media/CardAction.png">
 
 ## Features
 
@@ -78,6 +78,39 @@ Platforms used:
 - Google Docs: The team created and shared a Google Doc to note down ideas and store recipe links
 
 ## Testing
+
+## Validation Testing
+The following websites have been used to validate the code being used on the website. The original code has been tested to ensure the functionality of the website. This will detect any syntax errors if provided and ensure the website is functioning correctly for the developer and the users of the webpage. 
+- JavaScript - https://jshint.com/
+- HTML - https://validator.w3.org/
+- CSS - https://jigsaw.w3.org/css-validator/
+- Lighthouse - https://developers.google.com/web/tools/lighthouse/?utm_source=devtools
+
+## User Stories Testing
+
+## Manual testing
+The use of manual testing ensures the results are correct and accurate at the time and can identify errors displayed which can be looked into further if necessary. From clicking items to completing full check outs on the website.  Provided below is a list of testing requirements to which will enable us to confirm the website is working to its full potential.  This will help confirm the site is working as required from the designing and creating aspect of the website development.
+Testing Client Stories from UX Section
+Manually testing was completed to ensure the website met the user/ user stories requirements. 
+This would ensure testing the user stories we have covered the website requirements for the user the functionality, visual and usage responsiveness.
+This would help to provide an indication to the level of the web site was working and if it completed all the requirements necessary
+ 
+
+Cross Browser Testing
+The use of multiple web browsers allows us to check and test the functionality across different platforms and user interfaces.  The types of web browsers we used were web browsers and mobile devices. This will be due to the responsive testing required to ensure this works for all users.
+
+Testing will ensure the website is suitable and the website has been thoroughly checked for any users. A list of actions required to be available for the website have been provided below.
+
+- register details on the website and access a profile
+- login and logout the website securely
+- navigate the site easily and intuitively
+- access the recipes and dishes by clicking on the recipe cards
+- recognise the dates of the cards
+- click on the card to display the dishes and recipes
+- hover over a card so that they can easily understand what card they are going to click
+- ability to mute or unmute the music
+- ensure the square selected displays the card with all the information
+- add a superuser
 
 ## Deployment
 
