@@ -58,6 +58,8 @@ Links to the wireframes are below:
 
 [Unwrapped recipe](https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/wireframes/CardAction.png)
 
+[Recipes page]()
+
 ## Features
 
 ## Technologies
@@ -140,6 +142,16 @@ Platforms used:
 The project was deployed using Heroku. The static files were hosted on Cloudinary. 
 
 ## Credits
+
+### Resources
+
+[The Snow Effect](https://www.youtube.com/watch?v=XSy7Yh83pWg&ab_channel=RajUpadhyay)
+Author: [Raj Upadhyay](https://www.youtube.com/channel/UCLGMtGF18DZbzSbWLALB8tg)
+
+Animations:
+[W3Schools](https://www.w3schools.com/css/)
+[MDN Web Docs](https://developer.mozilla.org/en-US/)
+
 
 ### Inspiration
 
