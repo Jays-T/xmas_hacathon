@@ -19,18 +19,49 @@
             Can you complete the challenge in time and save Christmas?
             
         </p>
-        {% for recipe in recipes %}
-        <h2>{{ recipe.title }}</h2>
-            <h3>Ingredients:</h3>
-            {% for ingredient in recipe.ingredients %}
-            <h6>{{ ingredient }}</h6>
-            {% endfor %}
 
-            <h3>Method:</h3>
-            {% for method in recipe.method %}
-            <h6>{{ method }}</h6>
+        <div class="container recipe_wrapper">
+            {% for recipe in recipes %}
+            
+            <!-- Start single recipe card HTML -->
+            <div class="row">
+                <h1><strong>{{ recipe.title }}</strong></h1>
+            </div>
+            <div class="row">
+                <h2>{{ recipe.description }}</h2>
+            </div>
+            <div class="row">
+                <h3>{{ recipe.author }}</h3>
+            </div>
+            <p><a href="#">{{ recipe.url }}</a></p>
+
+            <!-- To Show Ingredients List -->
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>In order to make {{ recipe.title }} you will need:</h3>
+                    <ul>
+                        {% for ingredient in recipe.ingredients %}
+
+                            <li>{{ ingredient }}</li>
+
+                        {% endfor %}
+                    </ul>
+                </div>
+            <!-- Vertical line -->
+            <!-- <div class="col-sm-12 vertical_effect"></div> -->
+            <!-- To Show List of recipe cooking methods -->
+                <div class="col-sm left_vetical_line">
+                {% for method in recipe.method %}
+
+                    <p>{{ method }}</p>
+
+                {% endfor %}
+                </div>
+            <!-- End single recipe card HTML-->
+            </div>
+            
             {% endfor %}
-        {% endfor %}
+        </div>
 
     </div>
 </div>
