@@ -61,7 +61,12 @@ Links to the wireframes are below:
 
 [Unwrapped recipe](https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/wireframes/CardAction.png)
 
-[Recipes page]()
+[Login page](https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/wireframes/LogIn.png)
+
+[Sign Up page](https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/wireframes/SignUp.png)
+
+[Recipe](https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/wireframes/Recipe.png)
+
 
 ## Features
 
@@ -121,7 +126,7 @@ Platforms used:
 
 ### Testing Returning Visitor Goals
 
-#### - Returning visitors must be able to easily log into the site
+#### Returning visitors must be able to easily log into the site
 - The main landing page has a login link that is prominent, and allows a returning user to login to the site easily
 
 #### Returning visitors, once logged in, must be able to see previously unlocked recipes
@@ -158,7 +163,7 @@ This would ensure testing the user stories we have covered the website requireme
 This would help to provide an indication to the level of the web site was working and if it completed all the requirements necessary
  
 
-Cross Browser Testing
+## Cross Browser Testing
 The use of multiple web browsers allows us to check and test the functionality across different platforms and user interfaces.  The types of web browsers we used were web browsers and mobile devices. This will be due to the responsive testing required to ensure this works for all users.
 
 Testing will ensure the website is suitable and the website has been thoroughly checked for any users. A list of actions required to be available for the website have been provided below.
@@ -174,27 +179,62 @@ Testing will ensure the website is suitable and the website has been thoroughly 
 - ensure the square selected displays the card with all the information
 - add a superuser
 
+## Browser Testing
+
+[Browser Testing Table 1](https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/test/Test1.png)
+
+[Browser Testing Table 2](https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/test/Test2.png)
+
+## Device Testing
+
+To enable all device were tested and various device were explored tablets and mobiles were considered to test the game on. This would ensure this works on multiple devices.
+
+[Mobile Testing Table 1](https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/test/Test3.png)
+
+[Mobile Testing Table 2](https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/test/Test4.png)
+
+## Lighthouse Audit
+
+“Identify and fix common problems that affect your sites performance, accessibility, and user experience.”
+
+Accessibility testing is key to checking the site functional and ensuring the site is running to its maximum performance. The lighthouse audit will provide accurate information from scanning the website and provide the finding of the website functioning. This can be selected by using the development tool and generating a report on a selected device
+
+This can be mobile or desktop devices.
+
+[Lighthouse Audit](https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/lighthouse/LighthouseAudit.png)
+
+Here are the results from the lighthouse audit on mobile devices.  Mobile devices show the responsiveness on the website and websites are based on the mobile responsiveness.
+
+[Lighthouse Mobile First Result](https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/lighthouse/LighthouseMobile.png)
+
+The results for desktop lighthouse audit is as followed. As this is a early lighthouse review we want to see the improvements to the website when developing and improving the code on the website. This will be completed at the end of the website completion.
+
+[Lighthouse Desktop First Result](https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/lighthouse/LighthouseDesktop.png)
+
+The website has been tested with the lighthouse function to provide the website functionality and performance score. As a result, some improvements were made to the desktop and mobile display on the website and the results have improved. The website presented has a clean feel for users and it’s not too difficult to navigate and use the website features.
+
+
+### MobileLighthouse Audit Latest Result
+
+ 
+
+### Desktop Lighthouse Audit Latest Result
+
+
+
+### Lighthouse Audit
+
 ## Deployment
 
 The project was deployed using Heroku. The static files were hosted on Cloudinary. 
 
 ## Credits
 
-### Resources
-
--[The Snow Effect](https://www.youtube.com/watch?v=XSy7Yh83pWg&ab_channel=RajUpadhyay)
-  -Author: [Raj Upadhyay](https://www.youtube.com/channel/UCLGMtGF18DZbzSbWLALB8tg)
-
--Animations:
-  -[W3Schools](https://www.w3schools.com/css/)
-  -[MDN Web Docs](https://developer.mozilla.org/en-US/)
-
-
 ### Inspiration
 
 The Winner of the Code Institute November 2021 Hackathon was agreed by all team members to have extensive documentation, and was used as a rough template for this project's documentation. 
 
-### Recipe sources
+### Resources
 
 - [BBC Good Food](https://www.bbcgoodfood.com/), for many of the Christmas-themed recipes used in the project
 
@@ -222,6 +262,3 @@ The Winner of the Code Institute November 2021 Hackathon was agreed by all team 
   - [David Paul Thompson](https://github.com/tomod24)
 
   - [Adam Boley](https://github.com/AdamBoley)
-
-
-
