@@ -1,0 +1,22 @@
+{% extends "base.html" %} 
+
+{% load static %} 
+
+{% block extratitle %}- Calendar Page{% endblock %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col col-12" style="background-color: antiquewhite; display:flex; flex-direction: column; border: 2px solid black; border-radius: 4px;">
+        <h1>{{ calendar }}</h1>
+
+        {% for day in calendar.days.all %}
+            <div class="box" style="display:flex; flex-direction: column; border: 2px solid black; border-radius: 4px; margin: 4px 0">
+                <span>Date: {{ day.date }} </span>
+                <span>{{ day.days_recipe }}</span>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
