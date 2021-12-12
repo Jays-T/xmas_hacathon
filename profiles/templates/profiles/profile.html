@@ -1,0 +1,22 @@
+{% extends "base.html" %} 
+
+{% load static %} 
+
+{% block extratitle %}- Profile Page{% endblock %}
+
+{% block content %}
+<!--Profile to render user's Advent Calendar-->
+<div class="row">
+    <div class="col col-12 d-flex flex-column justify-content-center align-items-center">
+        <h1>Welcome {{ user.username }}!</h1>
+        <h1>The situation is dire!</h1>
+        <h3>Santa's elves must feed!</h3>
+        <p>
+            Hurry, there is no time to lose! If we don't act fast
+            Santa will not have enough Christmas presents for all the children this year.
+            It's entirely unfair, but he'll put you on the naughty list if you don't feed the hangry elves!!
+        </p>
+        <a href="{% url 'show_recipes' %}">Show Recipes</a>
+    </div>
+</div>
+{% endblock %}
