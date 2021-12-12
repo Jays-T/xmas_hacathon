@@ -43,6 +43,9 @@ To avoid this, Santa must ensure that Jimmy is fed a delicious dish every day so
 
 
 ## Design
+- Database planning and mapping out was done using <a href="https://dbdiagram.io/">Db Diagram</a>
+- ![image](https://user-images.githubusercontent.com/59046774/145722188-b6dbe9cc-257d-421e-b6d0-d68092e83e1f.png)
+
 
 ## Wireframes
 
