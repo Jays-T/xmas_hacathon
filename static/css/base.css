@@ -1,14 +1,48 @@
 /* Styles on the base.html */
 body {
-    overflow: hidden;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url('/media/img/stock_background_1620x1080.png');
+    background-position: bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 20px;
+    color: #004700;
+    overflow-x: hidden;
+}
+
+section {
+    margin-bottom: -60px;
+    padding-bottom: 60px;
 }
 
 section.container {
     min-height: 100vh;
     min-width: 100vw;
     height: 100%;
-    background: linear-gradient(#123 30%, #667);
-    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link , .footer-link {
+    color:#004700;
+}
+
+footer.container {
+    background-color: #FFF;
+    height: 60px;
+}
+
+ul.no-bullets {
+    list-style-type: none; /* Remove bullets */
+}
+
+a:hover {
+    color:rgba(255, 0, 0, 0.801);
 }
 
 /* Snowing effect */
@@ -222,4 +256,40 @@ section.container {
 #card_eight:hover {
   cursor: pointer;
   animation: spin ease-in-out 3s infinite alternate;
+}
+
+@media screen and (max-width: 768px) {
+    .row {
+        padding: 5px;
+    }
+    
+}
+
+/*Styles for show_recipes.html */
+.recipe_wrapper {
+    text-align: center;
+    padding: 5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 100%;
+}
+
+.recipe_wrapper h2 {
+    color: blueviolet;
+}
+
+ul {
+    text-align: center;
+    list-style-position: inside;
+}
+
+/* .vertical_effect{
+    background-color: rgba(0, 71, 0, 0.5);
+    width: 1px;
+    align-content: stretch;
+    border-radius: 75%;
+} */
+
+.left_vetical_line{
+    border-left: solid;
+    border-color: #004700;
 }
