@@ -61,6 +61,8 @@ Links to the wireframes are below:
 
 [Unwrapped recipe](https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/wireframes/CardAction.png)
 
+[Recipes page]()
+
 ## Features
 
 ## Technologies
@@ -144,11 +146,21 @@ The project was deployed using Heroku. The static files were hosted on Cloudinar
 
 ## Credits
 
+### Resources
+
+-[The Snow Effect](https://www.youtube.com/watch?v=XSy7Yh83pWg&ab_channel=RajUpadhyay)
+  -Author: [Raj Upadhyay](https://www.youtube.com/channel/UCLGMtGF18DZbzSbWLALB8tg)
+
+-Animations:
+  -[W3Schools](https://www.w3schools.com/css/)
+  -[MDN Web Docs](https://developer.mozilla.org/en-US/)
+
+
 ### Inspiration
 
 The Winner of the Code Institute November 2021 Hackathon was agreed by all team members to have extensive documentation, and was used as a rough template for this project's documentation. 
 
-### Resources
+### Recipe sources
 
 - [BBC Good Food](https://www.bbcgoodfood.com/), for many of the Christmas-themed recipes used in the project
 
