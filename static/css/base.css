@@ -65,6 +65,21 @@ a:hover {
     }
 } 
 
+/* Paper effect */
+
+#paper {
+    position: relative;
+    margin: 40px auto;
+    width: 700px;
+    height: 450px;
+    background: url('/media/img/paper_13631071.png');
+    border-radius: 12px;
+    box-shadow: 0 15px 24px rgba(0,0,0,.7);
+    z-index: -1;
+    text-align: center;
+    font-size: 25px;
+}   
+
 /* Styles on advent.html */
 .row .container_box{
     justify-content: space-between;
@@ -257,6 +272,8 @@ a:hover {
   cursor: pointer;
   animation: spin ease-in-out 3s infinite alternate;
 }
+
+
 
 @media screen and (max-width: 768px) {
     .row {
