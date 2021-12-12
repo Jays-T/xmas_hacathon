@@ -1,14 +1,38 @@
 /* Styles on the base.html */
 body {
-    overflow: hidden;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url('/media/img/AdobeStock_238062854.jpeg');
+    background-position: bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 20px;
+}
+
+section {
+    margin-bottom: -60px;
+    padding-bottom: 60px;
 }
 
 section.container {
     min-height: 100vh;
     min-width: 100vw;
     height: 100%;
-    background: linear-gradient(#123 30%, #667);
-    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+footer.container {
+    background-color: #FFF;
+    height: 60px;
+}
+
+ul.no-bullets {
+    list-style-type: none; /* Remove bullets */
 }
 
 /* Snowing effect */
@@ -222,4 +246,11 @@ section.container {
 #card_eight:hover {
   cursor: pointer;
   animation: spin ease-in-out 3s infinite alternate;
+}
+
+@media screen and (max-width: 768px) {
+    .row {
+        padding: 5px;
+    }
+    
 }
