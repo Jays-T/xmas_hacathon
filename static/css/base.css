@@ -11,6 +11,7 @@ body {
     background-repeat: no-repeat;
     font-family: 'Mountains of Christmas', cursive;
     font-size: 20px;
+    color: #004700;
 }
 
 section {
@@ -26,6 +27,10 @@ section.container {
     margin: 0;
 }
 
+.nav-link , .footer-link {
+    color:#004700;
+}
+
 footer.container {
     background-color: #FFF;
     height: 60px;
@@ -33,6 +38,10 @@ footer.container {
 
 ul.no-bullets {
     list-style-type: none; /* Remove bullets */
+}
+
+a:hover {
+    color:rgba(255, 0, 0, 0.801);
 }
 
 /* Snowing effect */
