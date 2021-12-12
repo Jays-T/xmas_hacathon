@@ -34,42 +34,40 @@
     <title>The Hangry Elf {% block extratitle %}{% endblock %}</title>
   </head>
   <body>
+    <!-- Navbar -->
+    <header class="container-fluid fixed-top">
+      <div class="row">
+        <div class="col-12 bg-light">
+          <ul class="nav justify-content-center my-0">
+            <li class="nav-item">
+              <a href="{% url 'index' %}" class="nav-link"><strong>The Hangry Elf </strong></a>
+            </li>
+            {% if request.user.is_authenticated %}
+              <li class="nav-item">
+                <a href="{% url 'profile' %}" class="nav-link">Save Christmas!</a>
+              </li>
+              <li class="nav-item">
+                <a href="{% url 'account_logout' %}" class="nav-link">Logout</a>
+              </li>
+              <li class="nav-item">
+                <a href="{% url 'calendar' %}" class="nav-link">Calendar</a>
+              </li>
+              {% else %}
+              <li class="nav-item">
+                <a href="{% url 'account_signup' %}" class="nav-link">Register</a>
+              </li>
+              <li class="nav-item">
+                <a href="{% url 'account_login' %}" class="nav-link">Login</a>
+              </li>
+            {% endif %}
+          </ul>
+        </div>
+      </div>
+    </header>
     <section class="container d-flex justify-content-center align-items-center">
       <section class="snow_fx">
         <div class="row">
           <div class="col col-12">
-            <div class="container-fluid fixed-top">
-            <!--
-            Navbar goes here
-            -->
-            <!-- BELOW IS JUST TEMPORARY LINKS THAT NEED TO BE INCLUDED IN THE NAVBAR-->
-              <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-                <li>
-                  <a href="{% url 'index' %}" class="">The Hangry Elf</a>
-                </li>
-                {% if request.user.is_authenticated %}
-                  <li>
-                    <a href="{% url 'profile' %}" class="">Save Christmas!</a>
-                  </li>
-                  <li>
-                    <a href="{% url 'account_logout' %}" class="">Logout</a>
-                  </li>
-                  <li>
-                    <a href="{% url 'calendar' %}" class="">Calendar</a>
-                  </li>
-                  {% else %}
-                  <li>
-                    <a href="{% url 'account_signup' %}" class="">Register</a>
-                  </li>
-                  <li>
-                    <a href="{% url 'account_login' %}" class="">Login</a>
-                  </li>
-                  <li>
-                    <a href="{% url 'calendar' %}" class="">Calendar</a>
-                  </li>
-                {% endif %}
-              </ul>
-            </div>
             <div class="message-container">
             {% if messages %}
             {% endif %}
@@ -107,19 +105,19 @@
               <!-- Hidden bullets from: https://www.w3schools.com/howto/howto_css_list_without_bullets.asp -->
               <ul class="no-bullets"> 
                 <li>
-                  <a href="">John Traas</a>
+                  <a href="" class="footer-link">John Traas</a>
                 </li>
                 <li>
-                  <a href="">Adam Boley</a>
+                  <a href="" class="footer-link">Adam Boley</a>
                 </li>
                 <li>
-                  <a href="">Marialena Livathinopoulou</a>
+                  <a href="" class="footer-link">Marialena Livathinopoulou</a>
                 </li>
                 <li>
-                  <a href=""> David ? </a>
+                  <a href="" class="footer-link"> David ? </a>
                 </li>
                 <li>
-                  <a href="">Claudia Lai</a>
+                  <a href="" class="footer-link">Claudia Lai</a>
                 </li>
               </ul>
             </p>
