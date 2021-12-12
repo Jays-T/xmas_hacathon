@@ -145,12 +145,12 @@ The project was deployed using Heroku. The static files were hosted on Cloudinar
 
 ### Resources
 
-[The Snow Effect](https://www.youtube.com/watch?v=XSy7Yh83pWg&ab_channel=RajUpadhyay)
-Author: [Raj Upadhyay](https://www.youtube.com/channel/UCLGMtGF18DZbzSbWLALB8tg)
+-[The Snow Effect](https://www.youtube.com/watch?v=XSy7Yh83pWg&ab_channel=RajUpadhyay)
+  -Author: [Raj Upadhyay](https://www.youtube.com/channel/UCLGMtGF18DZbzSbWLALB8tg)
 
-Animations:
-[W3Schools](https://www.w3schools.com/css/)
-[MDN Web Docs](https://developer.mozilla.org/en-US/)
+-Animations:
+  -[W3Schools](https://www.w3schools.com/css/)
+  -[MDN Web Docs](https://developer.mozilla.org/en-US/)
 
 
 ### Inspiration
