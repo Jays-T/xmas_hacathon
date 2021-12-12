@@ -193,4 +193,13 @@
                 </div>
     </div>
 </div>
+
+
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+
+<script src="{% static 'advent_calendar/js/calendar.js' %}"></script>
+
 {% endblock %}
