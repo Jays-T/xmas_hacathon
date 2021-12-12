@@ -1,44 +1,7 @@
-<div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
-    <div class="d-flex">
-      <div class="toast-body">
-        {{ message }}
-     </div>
-      <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-    </div>
+<div role="alert" aria-live="assertive" aria-atomic="true" class="toast d-flex justify-content-center align-items-center p-3" data-bs-autohide="false">
+  <div class="toast-body d-flex flex-row justify-content-evenly align-items-center">
+      <span><strong>{{ message }}</strong></span>
+      <img src="/media/elf_toast_small.png" class="rounded me-2 end-0" alt="elf making a list">
+  </div>
+  <button type="button" class="btn-close btn-close-black me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
 </div>
-
-
-<div class="message-container toast-container d-flex flex-column justify-content-center align-items-end w-100">
-  {% if messages %}
-
-    {% for message in messages %} 
-    {% with message.level as level %} 
-    {% if level == 40 %} 
-        {% include 'includes/toasts/toast_error.html' %} 
-    {% elif level == 30 %} 
-        {% include 'includes/toasts/toast_warning.html' %} 
-    {% elif level == 20 %} 
-        {% include 'includes/toasts/toast_info.html' %} 
-    {% else %} 
-        {% include 'includes/toasts/toast_success.html' %} 
-    {% endif %}
-    {% endwith %} 
-    {% endfor %}
-
-  {% endif %}
-</div>
-
-{% block postloadjs %}
-<script>
-  const options = {
-    autohide: true,
-    delay: 3500,
-  }
-  window.onload = (event) => {
-    var toastElList = [].slice.call(document.querySelectorAll('.toast'))
-    var toastList = toastElList.map(function (toastEl) {
-      return new bootstrap.Toast(toastEl, options).show()
-    })
-  }
-</script>
-{% endblock %}
