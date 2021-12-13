@@ -83,6 +83,14 @@ a:hover {
     color:rgba(255, 0, 0, 0.801);
 }
 
+.error-page {
+    background-color: antiquewhite; 
+    display:flex; 
+    flex-direction: column; 
+    border: 2px solid black; 
+    border-radius: 4px;
+}
+
 /* Snowing effect */
 .snow_fx {
     z-index: -1;
