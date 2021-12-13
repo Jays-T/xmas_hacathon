@@ -2,7 +2,7 @@
 body {
     min-height: 100vh;
     min-width: 100vw;
-    background-image: url('/media/img/stock_background_1620x1080_p9h0u0.png');
+    background-image: url('the-hangry-elf/image/upload/v1639346606/media/img/stock_background_1620x1080_p9h0u0.png');
     background-position: bottom;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -82,7 +82,7 @@ a:hover {
     padding-top: 2rem;
     width: 40rem;
     height: 460px;
-    background: url('/media/img/paper_13631071_k8xbb7.png');
+    background: url('the-hangry-elf/image/upload/v1639346605/media/img/paper_13631071_k8xbb7.png');
     border-radius: 12px;
     box-shadow: 0 15px 24px rgba(0,0,0,.7);
     z-index: -1;
@@ -92,7 +92,7 @@ a:hover {
 
 .paper-banner {
     position: relative;
-    background: url('/media/img/paper_13631071_k8xbb7.png');
+    background: url('the-hangry-elf/image/upload/v1639346605/media/img/paper_13631071_k8xbb7.png');
     border-radius: 12px;
     box-shadow: 0 15px 24px rgba(0,0,0,.7);
     text-align: center;
