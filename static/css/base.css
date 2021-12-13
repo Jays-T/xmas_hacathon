@@ -24,6 +24,24 @@ body a {
     color: #004700;
 }
 
+.message-container .toast-container .position-absolute .p-3 .d-flex .flex-column .align-items-end .w-100 .p-3 .top-0 #toast-placement {
+    top: 2rem !important;
+}
+
+.toast-body #naughty {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid red;
+    border-radius: 6px;
+    padding: .8rem;
+    text-align: center;
+    background-color: antiquewhite;
+    font-weight: 700;
+    min-height: 6rem;
+    min-width: 20rem;
+}
+
 section {
     margin-bottom: -60px;
     padding-bottom: 60px;
@@ -212,4 +230,8 @@ ul {
         min-width: 40vw;
         max-width: 40vw;
     }
+    #toast-placement .top-0 {
+        top: 8rem !important;
+    }
+
 }

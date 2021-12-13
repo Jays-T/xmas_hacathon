@@ -116,8 +116,14 @@ def create_advent(request):
 
 @login_required
 def naughty(request):
-    messages.info(request, "I'm sorry, but you've thrown off the elves' groove...!")
-    messages.info(request, "Our records show that this day has not yet come and this recipe is not yet available!")
-    messages.error(request, "You've thrown off our groove!!!")
+    """
+    Display toast messages to the user if they try to open a recipe
+    not yet unlocked
+    """
+    # set custom message level
+    naughty = 50
+
+    messages.add_message(request, naughty, "Now now, be careful or you'll be\
+                                            put on the NAUGHTY list....")
 
     return(redirect(reverse(advent)))
