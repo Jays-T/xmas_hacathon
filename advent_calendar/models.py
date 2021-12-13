@@ -42,6 +42,10 @@ class Day(models.Model):
     date = models.DateField(null=True, blank=True)
     advent_calendar = models.ForeignKey(AdventCalendar, on_delete=models.CASCADE, related_name="advent_calendar_days")  # noqa: E501
     days_recipe = models.ForeignKey(Recipe, null=True, blank=True, on_delete=models.CASCADE)  # noqa: E501
+    done = models.BooleanField(default=False)
+
+    class Meta:
+        ordering = ['date']
 
     def __str__(self):
         return self.days_recipe.title
