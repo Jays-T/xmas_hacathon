@@ -29,7 +29,7 @@
             <p><a href="{{ recipe.url }}" target="_blank">Original Recipe Here</a></p>
 
             <!-- To Show Ingredients List -->
-            <div class="row">
+            <div class="row mb-5">
                 <div class="col-sm-6">
                     <h3>In order to make {{ recipe.title }} you will need:</h3>
                     <ul>
@@ -52,6 +52,7 @@
                 </div>
             <!-- End single recipe card HTML-->
             </div>
+            <a class="p-5" href="{% url 'calendar' %}" name="back-to-calendar">Back</a>
         </div>
 
     </div>
