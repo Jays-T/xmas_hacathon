@@ -140,12 +140,11 @@ a:hover {
 }
 
 .the_card {
-
-    border: 1px solid aquamarine;
+    border: 1px solid azure;
     box-sizing: border-box;
     text-align: center;
     line-height: 50%;
-    background-image: url("https://res.cloudinary.com/the-hangry-elf/image/upload/v1639365339/media/card_pattern_sphrim.jpg")
+    background-image: url("https://res.cloudinary.com/the-hangry-elf/image/upload/v1639365339/media/card_pattern_sphrim.jpg");
 }
 
 .the_card .card-header {
@@ -155,6 +154,10 @@ a:hover {
     opacity: .8;
 }
 
+.card-body i {
+    
+    font-size: 1.8rem;
+}
 
 .the_card:hover {
     box-shadow: 0px 0px 15px white;
