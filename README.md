@@ -3,12 +3,42 @@
 ---
 ## Project: Code Institute December 2021 Hackathon: Happy Holidays
 
-## Table of Content
+## Table of Contents
 
-<details><summary>Expand</summary>
-<p>
- 1. [Introduction](#introduction)
- 2. 
+<details>
+<summary>
+  Expand
+</summary>
+  
+  * [Introduction](#introduction)
+  * [User Experience (UX)](#user-experience-(ux))
+    * [User Stories](#user-stories)
+      * [Site Owner Goals](#site-owner-goals)
+      * [All Visitor Goals](#all-visitor-goals)
+      * [First Time Visitor Goals](#first-time-visitor-goals)
+      * [Returning Visitor Goals](#returning-visitor-goals)
+  * [Design](#design)
+  * [Wireframes](#wireframes)
+  * [Features](#features)
+  * [Technologies](#technologies)
+  * [Testing](#testing)
+    * [Testing Site Owner Goals](#testing-site-owner-goals)
+    * [Testing All Visitor Goals](#testing-all-visitor-goals)
+    * [Testing First Time Visitor Goals](#testing-all-visitor-goals)
+    * [Testing Returning Visitor Goals](#testing-returning-visitor-goals)
+    * [Validation Testing](#validation-testing)
+    * [Manual Testing](#manual-testing)
+    * [Cross Browser Testing](#cross-browser-testing)
+    * [Browser Testing](#browser-testing)
+    * [Device Testing](#device-testing)
+    * [Lighthouse Audit](#lighthouse-audit)
+  * [Deployment](#deployment)
+  * [Credits](#credits)
+    * [Inspiration](#inspiration)
+    * [Resources](#resources)
+    * [Media](#media)
+    * [Acknowledgements](#acknowledgements)
+    
 </details>
  
 ### Introduction
@@ -23,7 +53,7 @@ The theme of The Hangry Elf is that Santa's most important Elf, Jimmy, is prone 
 To avoid this, Santa must ensure that Jimmy is fed a delicious dish every day so that all of the presents will be made in time, and that the sleigh is ready to go!
 
 ---
-## UX
+## User Experience
 
 ### User Stories
 
@@ -37,7 +67,6 @@ To avoid this, Santa must ensure that Jimmy is fed a delicious dish every day so
 - Visitors must be able to navigate the site easily and intuitively
 - Visitors must be able to access the recipes and dishes by clicking on the recipe cards
 - Users must be able to recognise the dates of the cards
-- Users must be able to click on the card to display the dishes and recipes
 - Users must be able to hover over a card so that they can easily understand what card they are going to click
 - Users must be able to turn any music on or off with a clear button click
 
@@ -101,6 +130,10 @@ Platforms used:
 ---
 ## Testing
 
+### Manual testing
+
+The Hangry Elf was manually tested throughout its development to ensure that each of the [user stories](#user-stories) was fulfilled. The user stories are noted below, along with the results of the testing.
+
 ### Testing Site Owner Goals
 
 #### The site owners must be able to access the back-end as superusers
@@ -120,14 +153,11 @@ Platforms used:
 #### Users must be able to recognise the dates of the cards
 - The date is displayed on the card
 
-#### Users must be able to click on the card to display the dishes and recipes
-- 
-
 #### Users must be able to hover over a card so that they can easily understand what card they are going to click
 - The cards on the Advent Calendar page have hover effects that cease when the mouse is removed from over the card
 
 #### Users must be able to turn any music on or off with a clear button click
-- The music is controlled by a standard control panel
+- The music is controlled by a standard control panel in the header with clear, intuitive buttons. 
 
 ### Testing First Time Visitor Goals
 
@@ -140,47 +170,33 @@ Platforms used:
 ### Testing Returning Visitor Goals
 
 #### Returning visitors must be able to easily log into the site
-- The main landing page has a login link that is prominent, and allows a returning user to login to the site easily
+- The main landing page has a log-in link that is displayed prominently in the header, and allows a returning user to log-in to the site easily
 
 #### Returning visitors, once logged in, must be able to see previously unlocked recipes
-- 
-
-### Platform Testing - Desktop / Laptop
-
-#### Google Chrome
-- All tested and working correctly
-
-#### Microsoft Edge
-- 
-
-#### Safari
--
-
-#### Mozilla Firefox
--
+- On the advent calendar page, a logged-in returning user can see their progress through the advent calendar as previously unlocked recipes are marked by a green checkmark
 
 ### Validation Testing
 The following websites have been used to validate the code being used on the website. The original code has been tested to ensure the functionality of the website. This will detect any syntax errors if provided and ensure the website is functioning correctly for the developer and the users of the webpage. 
 - JavaScript - https://jshint.com/
+  - None
+
 - HTML - https://validator.w3.org/
+  - 1 errors and 1 warning were noted, but left uncorrected due to preserve the integrity and function of the website
+
 - CSS - https://jigsaw.w3.org/css-validator/
+  - No errors found
+
 - Lighthouse - https://developers.google.com/web/tools/lighthouse/?utm_source=devtools
+  - 
 
 ---
-## User Stories Testing
-
-### Manual testing
-The use of manual testing ensures the results are correct and accurate at the time and can identify errors displayed which can be looked into further if necessary. From clicking items to completing full check outs on the website.  Provided below is a list of testing requirements to which will enable us to confirm the website is working to its full potential.  This will help confirm the site is working as required from the designing and creating aspect of the website development.
-Testing Client Stories from UX Section
-Manually testing was completed to ensure the website met the user/ user stories requirements. 
-This would ensure testing the user stories we have covered the website requirements for the user the functionality, visual and usage responsiveness.
-This would help to provide an indication to the level of the web site was working and if it completed all the requirements necessary
- 
 
 ### Cross Browser Testing
-The use of multiple web browsers allows us to check and test the functionality across different platforms and user interfaces.  The types of web browsers we used were web browsers and mobile devices. This will be due to the responsive testing required to ensure this works for all users.
+The use of multiple web browsers allows us to check and test the functionality across different platforms and user interfaces. The types of web browsers we used were web browsers and mobile devices. This will be due to the responsive testing required to ensure this works for all users.
 
 Testing will ensure the website is suitable and the website has been thoroughly checked for any users. A list of actions required to be available for the website have been provided below.
+
+The Chrome Dev Tools were also used to ensure that the Hangry Elf was responsive when viewed on desktops, smartphones and tablets. The most common desktop and laptop browsers - Chrome, Microsoft Edge, Safari and Mozilla Firefox - were used to view the site to ensure that all users could use the site unimpeded.
 
 - register details on the website and access a profile
 - login and logout the website securely
@@ -236,8 +252,6 @@ The website has been tested with the lighthouse function to provide the website 
 
 
 
-### Lighthouse Audit
-
 ---
 ## Deployment
 
@@ -250,7 +264,7 @@ The project was deployed using Heroku. The static files were hosted on Cloudinar
 
 The Winner of the Code Institute November 2021 Hackathon was agreed by all team members to have extensive documentation, and was used as a rough template for this project's documentation. 
 
-### Resources
+### Recipes
 
 - [BBC Good Food](https://www.bbcgoodfood.com/), for many of the Christmas-themed recipes used in the project
 
@@ -262,9 +276,13 @@ The Winner of the Code Institute November 2021 Hackathon was agreed by all team 
 
 ### Media 
 
-- Track name: A Christmas Dance
-- Artist: Arthur Benson
-- Retrieved from: [Epidemic Sound](https://www.epidemicsound.com/track/yRFwYp70k9/)
+* Audio
+  - Track name: A Christmas Dance
+  - Artist: Arthur Benson
+  - Retrieved from: [Epidemic Sound](https://www.epidemicsound.com/track/yRFwYp70k9/)
+
+* Images
+  - [Adobe Stock Images](https://stock.adobe.com/)
 
 ### Acknowledgements
 
@@ -277,4 +295,4 @@ The Winner of the Code Institute November 2021 Hackathon was agreed by all team 
 
   - [David Paul Thompson](https://github.com/tomod24)
 
-  - [Adam Boley](https://github.com/AdamBoley)
+  - [Adam Boley](https://github.com/AdamBoley) (and his cat)
