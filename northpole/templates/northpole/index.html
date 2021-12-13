@@ -6,18 +6,23 @@
 
 {% block content %}
 <!--Index to render landing page Hero image with links to signup-->
-
-    <div class="d-flex flex-column justify-content-center align-items-center" id="paper">
-        <h1><strong>Santa's elves are hangry!</strong></h1>
-        <p>
-            They simply aren't themselves in this state 
-            and are refusing to build all the toys that Santa needs to deliver in time for Christmas! 
-            <br>
-            Your task, should you choose to accept this mission, is to cook one spectacular recipe every day
-            for Santa's hangry elves. 
-            <br>
-            Can you complete the challenge in time and save Christmas?
-        </p>
+    <div class="row">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <div id="paper">
+                <h1><strong>Santa's elves are hangry!</strong></h1>
+                <p>
+                    They simply aren't themselves in this state 
+                    and are refusing to build all the toys that Santa needs to deliver in time for Christmas! 
+                    <br>
+                    Your task, should you choose to accept this mission, is to cook one spectacular recipe every day
+                    for Santa's hangry elves. 
+                    <br>
+                    Can you complete the challenge in time and save Christmas?
+                </p>
+            </div>
+            <div class="paper-banner p-2">
+                <a class="p-5" href="{% url 'account_signup' %}">Register</a>
+            </div>
+        </div>
     </div>
-
 {% endblock %}

@@ -119,6 +119,8 @@ a:hover {
     box-shadow: 0 15px 24px rgba(0,0,0,.7);
     text-align: center;
     font-size: 25px;
+    min-width: 90vw;
+    max-width: 90vw;
 }
 
 /* Styles on advent.html */
@@ -226,7 +228,8 @@ ul {
     section.container {
         padding-top: .8rem;
     }
-    #paper {
+    #paper,
+    .paper-banner {
         min-width: 40vw;
         max-width: 40vw;
     }
