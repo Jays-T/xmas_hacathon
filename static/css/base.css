@@ -54,6 +54,7 @@ a:hover {
     position: absolute;
     background-image: url("/media/1.png"), url("/media/2.png"), url("/media/3.png");
     animation: snowfall 30s linear infinite;
+    overflow: hidden;
 } 
 
 @keyframes snowfall {
@@ -143,14 +144,6 @@ a:hover {
 }
 
 
-
-@media screen and (max-width: 768px) {
-    .row {
-        padding: 5px;
-    }
-    
-}
-
 /*Styles for show_recipes.html */
 .recipe_wrapper {
     text-align: center;
@@ -172,3 +165,14 @@ ul {
     border-left: solid;
     border-color: #004700;
 }
+
+/* Media Queries */
+
+@media (max-width: 480px) {
+    #home-link {
+      display: none;
+    }
+    #icon-link {
+        display: block !important; 
+    }
+  }
