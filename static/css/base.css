@@ -4,7 +4,13 @@
 body {
     min-height: 100vh;
     min-width: 100vw;
-    background: aliceblue;
+    background-image: url('https://res.cloudinary.com/the-hangry-elf/image/upload/v1639375382/media/img/stock_background_375x549_tlmo0b.png');
+        background-position: top;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+        background-repeat: repeat;
     font-family: 'Mountains of Christmas', cursive;
     font-size: 20px;
     letter-spacing: .1rem;
