@@ -6,193 +6,30 @@
 
 {% block content %}
 <!--Profile to render user's Advent Calendar-->
-<div id="calendar_wrapper">
-    <div class="row container_box">
-                <div class="the_card col-md-2 card_animate">
-                    <div class="card_container">
-                        <div class="front_card">
-                            <h3><strong>1</strong></h3>
-                        </div>
-                    </div>
+
+    <div class="row mt-1">
+        <div class="col-12 d-flex flex-column justify-content-center align-items-center mt-5 mb-2 p-5 paper-banner">
+            <h1>Beware!</h1>
+            <p>Santa's elves are refusing to create the toys needed for Christmas. All of them are hangry, but the 25 hangriest were stowed away and told to pick their favorite recipe!</p>
+            <p>Unlock and complete one recipe per day to feed the elves and save Christmas!</p>
+        </div>
+        {% for day in calendar.days.all %}
+        
+        <div class="col-12 col-sm-6 col-md-2 mt-4 mb-2">
+            <div class="card card_animate the_card p-3">
+                <h5 class="card-header">{{ day.date }}</h5>
+                <div class="card-body d-flex justify-content-center align-items-center">
+                    {% if day.date <= current_date %}
+                    <a href="{% url 'show_recipe' day.days_recipe.id %}" class="btn btn-primary" aria-disabled="false">Unlock</a>
+                    {% else %}
+                    <a href="{% url 'naughty' %}" class="btn btn-secondary" disabled aria-disabled="true">Locked</a>
+                    {% endif %}
                 </div>
-                <div class="the_card col-md-2 card_animate">
-                    <div class="card_container">
-                        <div class="front_card">
-                            <h3>2</h3>                            
-                        </div>
-                    </div>
-                </div>
-                <div class="the_card col-md-2 card_animate">
-                    <div class="card_container">
-                        <div class="front_card">
-                            <h3>3</h3>                            
-                        </div>
-                    </div>
-                </div>
-                <div class="the_card col-md-2 card_animate">
-                    <div class="card_container">
-                        <div class="front_card">
-                            <h3>4</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="the_card col-md-2 card_animate">
-                    <div class="card_container">
-                        <div class="front_card">
-                            <h3>5</h3>
-                        </div>
-                    </div>
-                </div>
+            </div>
+        </div>
+        {% endfor %}
     </div>
-    <div class="row container_box">
-                <div class="the_card col-md-2 card_animate">
-                    <div class="card_container">
-                        <div class="front_card">
-                            <h3>1</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="the_card col-md-2 card_animate">
-                    <div class="card_container">
-                        <div class="front_card">
-                            <h3>2</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="the_card col-md-2 card_animate">
-                    <div class="card_container">
-                        <div class="front_card">
-                            <h3>3</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="the_card col-md-2 card_animate">
-                    <div class="card_container">
-                        <div class="front_card">
-                            <h3>4</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="the_card col-md-2 card_animate">
-                    <div class="card_container">
-                        <div class="front_card">
-                            <h3>5</h3>
-                        </div>
-                    </div>
-                </div>
-    </div>
-    <div class="row container_box">
-                <div class="the_card col-md-2 card_animate">
-                    <div class="card_container">
-                        <div class="front_card">
-                            <h3>1</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="the_card col-md-2 card_animate">
-                    <div class="card_container">
-                        <div class="front_card">
-                            <h3>2</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="the_card col-md-2 card_animate">
-                    <div class="card_container">
-                        <div class="front_card">
-                            <h3>3</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="the_card col-md-2 card_animate">
-                    <div class="card_container">
-                        <div class="front_card">
-                            <h3>4</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="the_card col-md-2 card_animate">
-                    <div class="card_container">
-                        <div class="front_card">
-                            <h3>5</h3>
-                        </div>
-                    </div>
-                </div>
-    </div>
-    <div class="row container_box">
-                <div class="the_card col-md-2 card_animate">
-                    <div class="card_container">
-                        <div class="front_card">
-                            <h3>1</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="the_card col-md-2 card_animate">
-                    <div class="card_container">
-                        <div class="front_card">
-                            <h3>2</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="the_card col-md-2 card_animate">
-                    <div class="card_container">
-                        <div class="front_card">
-                            <h3>3</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="the_card col-md-2 card_animate">
-                    <div class="card_container">
-                        <div class="front_card">
-                            <h3>4</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="the_card col-md-2 card_animate">
-                    <div class="card_container">
-                        <div class="front_card">
-                            <h3>5</h3>
-                        </div>
-                    </div>
-                </div>
-    </div>
-    <div class="row container_box">
-                <div class="the_card col-md-2 card_animate">
-                    <div class="card_container">
-                        <div class="front_card">
-                            <h3>1</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="the_card col-md-2 card_animate">
-                    <div class="card_container">
-                        <div class="front_card">
-                            <h3>2</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="the_card col-md-2 card_animate">
-                    <div class="card_container">
-                        <div class="front_card">
-                            <h3>3</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="the_card col-md-2 card_animate">
-                    <div class="card_container">
-                        <div class="front_card">
-                            <h3>4</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="the_card col-md-2 card_animate">
-                    <div class="card_container">
-                        <div class="front_card">
-                            <h3>5</h3>
-                        </div>
-                    </div>
-                </div>
-    </div>
-</div>
+
 
 
 {% endblock %}

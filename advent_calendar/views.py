@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.core.exceptions import ObjectDoesNotExist
@@ -15,7 +15,32 @@ from profiles.models import UserProfile
 def advent(request):
     """ A view to return calendar page """
 
-    return render(request, 'advent_calendar/advent.html')
+    template = 'advent_calendar/advent.html'
+    if request.user.is_authenticated:
+
+        profile = get_object_or_404(UserProfile, user=request.user)
+        try:
+            users_calendar = profile.user_advent_calendar.get()
+        except ObjectDoesNotExist:
+            messages.warning(request, 'Our elves found that you have no calendar \
+                                       please wait while we work our magic')
+            return(redirect(reverse(create_advent)))
+
+        has_days = users_calendar.days.all()
+
+        date_today = datetime.date.today()
+
+        context = {
+            'calendar': users_calendar,
+            'days': has_days,
+            'current_date': date_today
+        }
+        messages.warning(request, 'Hmmmm, my records show you already have a calendar!\
+                         Yet the elves have not been fed? ')
+
+        return render(request, template, context)
+
+    return render(request, template)
 
 
 @login_required
@@ -78,9 +103,21 @@ def create_advent(request):
     messages.warning(request, 'Hmmmm, my records show you already have a calendar!\
         Yet the elves have not been fed? ')
 
-    template = 'advent_calendar/testing_advent.html'
+    date_today = datetime.date.today()
+    template = 'advent_calendar/advent.html'
     context = {
         'calendar': users_calendar,
+        'days': has_days,
+        'current_date': date_today
     }
 
     return render(request, template, context)
+
+
+@login_required
+def naughty(request):
+    messages.info(request, "I'm sorry, but you've thrown off the elves' groove...!")
+    messages.info(request, "Our records show that this day has not yet come and this recipe is not yet available!")
+    messages.error(request, "You've thrown off our groove!!!")
+
+    return(redirect(reverse(advent)))

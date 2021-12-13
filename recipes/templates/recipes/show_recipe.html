@@ -6,22 +6,9 @@
 
 {% block content %}
 <!--Index to render landing page Hero image with links to signup-->
-<div class="row">
+<div class="row mt-5 mb-5">
     <div class="col col-12 d-flex flex-column justify-content-center align-items-center">
-        <h1>Welcome to the Hangry Elf</h1>
-        <p>
-            Santa's elves are hangry! They simply aren't themselves in this state 
-            and are refusing to build all the toys that Santa needs to deliver in time for Christmas! 
-            
-            Your task, should you choose to accept this mission, is to cook one spectacular recipe every day
-            for Santa's hangry elves. 
-            
-            Can you complete the challenge in time and save Christmas?
-            
-        </p>
-
-        <div class="container recipe_wrapper">
-            {% for recipe in recipes %}
+        <div class="container recipe_wrapper mt-5">
             
             <!-- Start single recipe card HTML -->
             <div class="row">
@@ -30,10 +17,16 @@
             <div class="row">
                 <h2>{{ recipe.description }}</h2>
             </div>
+            {% if recipe.author %}
             <div class="row">
-                <h3>{{ recipe.author }}</h3>
+                <h3>Author: {{ recipe.author }}</h3>
             </div>
-            <p><a href="#">{{ recipe.url }}</a></p>
+            {% else %}
+            <div class="row">
+                <h3>Author unknown: ... but we're pretty sure it was this hangry elf! <img src="/media/hangry_elf_toast.png" alt="grumpy hungry elf"></h3>
+            </div>
+            {% endif %}
+            <p><a href="{{ recipe.url }}" target="_blank">Original Recipe Here</a></p>
 
             <!-- To Show Ingredients List -->
             <div class="row">
@@ -59,8 +52,6 @@
                 </div>
             <!-- End single recipe card HTML-->
             </div>
-            
-            {% endfor %}
         </div>
 
     </div>

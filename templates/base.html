@@ -70,13 +70,10 @@
             </li>
             {% if request.user.is_authenticated %}
               <li class="nav-item mt-1">
-                <a href="{% url 'create_calendar' %}" class="nav-link">Save Christmas!</a>
+                <a href="{% url 'calendar' %}" class="nav-link">Save Christmas!</a>
               </li>
               <li class="nav-item mt-1">
                 <a href="{% url 'account_logout' %}" class="nav-link">Logout</a>
-              </li>
-              <li class="nav-item mt-1">
-                <a href="{% url 'calendar' %}" class="nav-link">Calendar</a>
               </li>
               {% else %}
               <li class="nav-item mt-1">
@@ -88,7 +85,7 @@
             {% endif %}
               <!-- Audio player -->
               <li>
-                <audio controls autoplay id="audio">
+                <audio controls id="audio">
                   <source src="{{ MEDIA_URL }}/audio/calendar_sound.mp3" type="audio/mpeg">  
                 </audio>
               </li>
@@ -97,25 +94,25 @@
       </div>
     </header>
     <section class="container d-flex justify-content-center align-items-center">
-      <section class="snow_fx">
-        <div class="message-container toast-container position-absolute p-3 d-flex flex-column justify-content-center align-items-end w-100 p-3" id="toastPlacement">
-          {% if messages %}
-        
-            {% for message in messages %} 
-            {% with message.level as level %} 
-            {% if level == 40 %} 
-                {% include 'includes/toasts/toast_error.html' %} 
-            {% elif level == 30 %} 
-                {% include 'includes/toasts/toast_warning.html' %} 
-            {% elif level == 20 %} 
-                {% include 'includes/toasts/toast_info.html' %} 
-            {% else %} 
-                {% include 'includes/toasts/toast_success.html' %} 
+      
+          <div class="message-container toast-container position-absolute p-3 d-flex flex-column justify-content-center align-items-end w-100 p-3" id="toastPlacement">
+            {% if messages %}
+          
+              {% for message in messages %} 
+              {% with message.level as level %} 
+              {% if level == 40 %} 
+                  {% include 'includes/toasts/toast_error.html' %} 
+              {% elif level == 30 %} 
+                  {% include 'includes/toasts/toast_warning.html' %} 
+              {% elif level == 20 %} 
+                  {% include 'includes/toasts/toast_info.html' %} 
+              {% else %} 
+                  {% include 'includes/toasts/toast_success.html' %} 
+              {% endif %}
+              {% endwith %} 
+              {% endfor %}
+          
             {% endif %}
-            {% endwith %} 
-            {% endfor %}
-        
-          {% endif %}
         </div>
         <div class="row">
           <div class="col col-12">
@@ -126,10 +123,12 @@
             </div>
           </div>
         </div>
-      </section>
+        <section class="snow_fx">
+        </section>
     </section>
     <!-- Footer -->
     <footer class="text-center bg-light w-100 p-0 m-0">
+    <footer class="text-center text-lg-start bg-light w-100 mt-2">
       <!-- Grid container -->
       <div class="container p-4">
         <!--Grid row-->
