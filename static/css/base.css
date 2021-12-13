@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
 
 /* Styles on the base.html */
@@ -6,9 +13,6 @@ body {
     min-width: 100vw;
     background-image: url('https://res.cloudinary.com/the-hangry-elf/image/upload/v1639375382/media/img/stock_background_375x549_tlmo0b.png');
         background-position: top;
-        -webkit-background-size: contain;
-        -moz-background-size: contain;
-        -o-background-size: contain;
         background-size: contain;
         background-repeat: repeat;
     font-family: 'Mountains of Christmas', cursive;
@@ -29,9 +33,16 @@ body a {
 }
 
 .toast-body #naughty {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     border: 1px solid red;
     border-radius: 6px;
     padding: .8rem;
@@ -75,15 +86,26 @@ a:hover {
 /* Snowing effect */
 .snow_fx {
     z-index: -1;
+    display: -ms-grid;
     display: grid;
     place-items: center;
     width: 100%;
     height: 100%;
     position: absolute;
     background-image: url("https://res.cloudinary.com/the-hangry-elf/image/upload/v1639346119/media/1_olhuqv.png"), url("https://res.cloudinary.com/the-hangry-elf/image/upload/v1639346116/media/2_ll7zal.png"), url("https://res.cloudinary.com/the-hangry-elf/image/upload/v1639346112/media/3_s4eva1.png");
-    animation: snowfall 30s linear infinite;
+    -webkit-animation: snowfall 30s linear infinite;
+            animation: snowfall 30s linear infinite;
     overflow: hidden;
     pointer-events: all;
+} 
+
+@-webkit-keyframes snowfall {
+    0%{
+        background-position: 0 0, 0 0, 0 0, 0 0;
+    }
+    100%{
+        background-position: -500px 1000px, -400px 400px, 300px 700px;
+    }
 } 
 
 @keyframes snowfall {
@@ -98,9 +120,15 @@ a:hover {
 /* Paper effect */
 
 #paper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin: 2rem 0;
     padding: 2rem;
     min-width: 85vw;
@@ -109,7 +137,8 @@ a:hover {
     background: url('https://res.cloudinary.com/the-hangry-elf/image/upload/v1639376541/media/img/paper_13631071_ysup2q.webp') no-repeat;
     background-size: cover;
     border-radius: 12px;
-    box-shadow: 0 15px 24px rgba(0,0,0,.7);
+    -webkit-box-shadow: 0 15px 24px rgba(0,0,0,.7);
+            box-shadow: 0 15px 24px rgba(0,0,0,.7);
     z-index: -1;
     text-align: center;
     font-size: 1.2rem;
@@ -120,7 +149,8 @@ a:hover {
     background: url('https://res.cloudinary.com/the-hangry-elf/image/upload/v1639376541/media/img/paper_13631071_ysup2q.webp') no-repeat;
     background-size: cover;
     border-radius: 12px;
-    box-shadow: 0 15px 24px rgba(0,0,0,.7);
+    -webkit-box-shadow: 0 15px 24px rgba(0,0,0,.7);
+            box-shadow: 0 15px 24px rgba(0,0,0,.7);
     text-align: center;
     font-size: 25px;
     min-width: 90vw;
@@ -134,18 +164,21 @@ a:hover {
 
 
 .row .container_box{
-    justify-content: space-between;
-    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     width: 100%;
 }
 
 .the_card {
-
-    border: 1px solid aquamarine;
-    box-sizing: border-box;
+    border: 1px solid azure;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     text-align: center;
     line-height: 50%;
-    background-image: url("https://res.cloudinary.com/the-hangry-elf/image/upload/v1639365339/media/card_pattern_sphrim.jpg")
+    background-image: url("https://res.cloudinary.com/the-hangry-elf/image/upload/v1639365339/media/card_pattern_sphrim.jpg");
 }
 
 .the_card .card-header {
@@ -155,9 +188,14 @@ a:hover {
     opacity: .8;
 }
 
+.card-body i {
+    
+    font-size: 1.8rem;
+}
 
 .the_card:hover {
-    box-shadow: 0px 0px 15px white;
+    -webkit-box-shadow: 0px 0px 15px white;
+            box-shadow: 0px 0px 15px white;
   }
 
 .front_card {
@@ -172,18 +210,31 @@ a:hover {
 /* Animation styles for the card */
 
 /* Card animation */
+@-webkit-keyframes shaking {
+    0% { -webkit-transform: translate(1px, 1px) rotate(0deg); transform: translate(1px, 1px) rotate(0deg); }
+    10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); transform: translate(-3px, 0px) rotate(1deg); }
+    30% { -webkit-transform: translate(3px, 2px) rotate(0deg); transform: translate(3px, 2px) rotate(0deg); }
+    40% { -webkit-transform: translate(1px, -1px) rotate(1deg); transform: translate(1px, -1px) rotate(1deg); }
+    50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); transform: translate(-3px, 1px) rotate(0deg); }
+    70% { -webkit-transform: translate(3px, 1px) rotate(-1deg); transform: translate(3px, 1px) rotate(-1deg); }
+    80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); transform: translate(-1px, -1px) rotate(1deg); }
+    90% { -webkit-transform: translate(1px, 2px) rotate(0deg); transform: translate(1px, 2px) rotate(0deg); }
+    100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); transform: translate(1px, -2px) rotate(-1deg); }
+  }
 @keyframes shaking {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
+    0% { -webkit-transform: translate(1px, 1px) rotate(0deg); transform: translate(1px, 1px) rotate(0deg); }
+    10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); transform: translate(-3px, 0px) rotate(1deg); }
+    30% { -webkit-transform: translate(3px, 2px) rotate(0deg); transform: translate(3px, 2px) rotate(0deg); }
+    40% { -webkit-transform: translate(1px, -1px) rotate(1deg); transform: translate(1px, -1px) rotate(1deg); }
+    50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); transform: translate(-3px, 1px) rotate(0deg); }
+    70% { -webkit-transform: translate(3px, 1px) rotate(-1deg); transform: translate(3px, 1px) rotate(-1deg); }
+    80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); transform: translate(-1px, -1px) rotate(1deg); }
+    90% { -webkit-transform: translate(1px, 2px) rotate(0deg); transform: translate(1px, 2px) rotate(0deg); }
+    100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); transform: translate(1px, -2px) rotate(-1deg); }
   }
   
 .card_animate {
@@ -192,7 +243,8 @@ a:hover {
   
 .card_animate:hover {
     cursor: pointer;
-    animation: shaking ease-in-out 0.5s infinite alternate;  
+    -webkit-animation: shaking ease-in-out 0.5s infinite alternate;
+            animation: shaking ease-in-out 0.5s infinite alternate;  
 }
 
 
@@ -232,9 +284,6 @@ ul {
     body {
         background-image: url('https://res.cloudinary.com/the-hangry-elf/image/upload/v1639375385/media/img/stock_background_740x1080_nv7gqd.png');
         background-position: bottom;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
         background-size: cover;
         background-repeat: no-repeat;
     }
