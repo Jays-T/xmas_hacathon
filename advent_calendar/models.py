@@ -44,5 +44,8 @@ class Day(models.Model):
     days_recipe = models.ForeignKey(Recipe, null=True, blank=True, on_delete=models.CASCADE)  # noqa: E501
     done = models.BooleanField(default=False)
 
+    class Meta:
+        ordering = ['date']
+
     def __str__(self):
         return self.days_recipe.title
