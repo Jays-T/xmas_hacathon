@@ -101,7 +101,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 40px;
+    margin: 2rem 0;
     padding: 2rem;
     min-width: 85vw;
     max-width: 85vw;
