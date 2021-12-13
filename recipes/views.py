@@ -8,16 +8,15 @@ from random import sample
 
 
 @login_required
-def show_recipes(request):
+def show_recipe(request, recipe_id):
     """ Placeholder proof of concept for recipes """
-    recipes = Recipe.objects.all()
+    recipe = get_object_or_404(Recipe, id=recipe_id)
 
-    random_selection = random.sample(list(recipes), 4)
-    print(f'recipes are: {random_selection}')
-
-    template = 'recipes/show_recipes.html'
+    template = 'recipes/show_recipe.html'
     context = {
-        "recipes": recipes,
+        "recipe": recipe,
     }
+    messages.success(request, 'A most excellent choice!')
+    messages.warning(request, 'This is making me even more hangry!')
 
     return render(request, template, context)

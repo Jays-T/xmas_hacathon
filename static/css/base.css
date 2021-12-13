@@ -1,18 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
+
 /* Styles on the base.html */
 body {
     min-height: 100vh;
     min-width: 100vw;
-    background-image: url('/media/img/stock_background_1620x1080.png');
-    background-position: bottom;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url('https://res.cloudinary.com/the-hangry-elf/image/upload/v1639375382/media/img/stock_background_375x549_tlmo0b.png');
+        background-position: top;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+        background-repeat: repeat;
     font-family: 'Mountains of Christmas', cursive;
     font-size: 20px;
+    letter-spacing: .1rem;
+    font-weight: 700;
     color: #004700;
     overflow-x: hidden;
+}
+
+body a {
+    text-decoration: none;
+    color: #004700;
+}
+
+.message-container .toast-container .position-absolute .p-3 .d-flex .flex-column .align-items-end .w-100 .p-3 .top-0 #toast-placement {
+    top: 2rem !important;
+}
+
+.toast-body #naughty {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid red;
+    border-radius: 6px;
+    padding: .8rem;
+    text-align: center;
+    background-color: antiquewhite;
+    font-weight: 700;
+    min-height: 6rem;
+    min-width: 20rem;
 }
 
 section {
@@ -47,14 +74,16 @@ a:hover {
 
 /* Snowing effect */
 .snow_fx {
+    z-index: -1;
     display: grid;
     place-items: center;
     width: 100%;
     height: 100%;
     position: absolute;
-    background-image: url("/media/1.png"), url("/media/2.png"), url("/media/3.png");
+    background-image: url("https://res.cloudinary.com/the-hangry-elf/image/upload/v1639346119/media/1_olhuqv.png"), url("https://res.cloudinary.com/the-hangry-elf/image/upload/v1639346116/media/2_ll7zal.png"), url("https://res.cloudinary.com/the-hangry-elf/image/upload/v1639346112/media/3_s4eva1.png");
     animation: snowfall 30s linear infinite;
     overflow: hidden;
+    pointer-events: all;
 } 
 
 @keyframes snowfall {
@@ -69,17 +98,34 @@ a:hover {
 /* Paper effect */
 
 #paper {
-    margin: 40px;
-    padding-top: 2rem;
-    width: 40rem;
-    height: 460px;
-    background: url('/media/img/paper_13631071.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2rem 0;
+    padding: 2rem;
+    min-width: 85vw;
+    max-width: 85vw;
+    height: 540px;
+    background: url('https://res.cloudinary.com/the-hangry-elf/image/upload/v1639376541/media/img/paper_13631071_ysup2q.webp') no-repeat;
+    background-size: cover;
     border-radius: 12px;
     box-shadow: 0 15px 24px rgba(0,0,0,.7);
     z-index: -1;
     text-align: center;
+    font-size: 1.2rem;
+}
+
+.paper-banner {
+    position: relative;
+    background: url('https://res.cloudinary.com/the-hangry-elf/image/upload/v1639376541/media/img/paper_13631071_ysup2q.webp') no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    box-shadow: 0 15px 24px rgba(0,0,0,.7);
+    text-align: center;
     font-size: 25px;
-}   
+    min-width: 90vw;
+    max-width: 90vw;
+}
 
 /* Styles on advent.html */
 #calendar_wrapper{
@@ -94,14 +140,23 @@ a:hover {
 }
 
 .the_card {
-    width: 150px;
-    height: 200px;
-    border: 10px solid white;
+    border: 1px solid azure;
     box-sizing: border-box;
     text-align: center;
     line-height: 50%;
-    margin: 15px;
-    background-image: url("/media/card_pattern.jpg")
+    background-image: url("https://res.cloudinary.com/the-hangry-elf/image/upload/v1639365339/media/card_pattern_sphrim.jpg");
+}
+
+.the_card .card-header {
+    background-color: antiquewhite;
+    color: black;
+    border-radius: 6px;
+    opacity: .8;
+}
+
+.card-body i {
+    
+    font-size: 1.8rem;
 }
 
 .the_card:hover {
@@ -176,3 +231,52 @@ ul {
         display: block !important; 
     }
   }
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url('https://res.cloudinary.com/the-hangry-elf/image/upload/v1639375385/media/img/stock_background_740x1080_nv7gqd.png');
+        background-position: bottom;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    section.container {
+        padding-top: .8rem;
+    }
+    #paper {
+        font-size: 1.7rem;
+    }
+    #paper,
+    .paper-banner {
+        min-width: 85vw;
+        max-width: 85vw;
+    }
+    #toast-placement .top-0 {
+        top: 8rem !important;
+    }
+
+}
+@media screen and (min-width: 1024px) {
+    #paper,
+    .paper-banner {
+        min-width: 60vw;
+        max-width: 60vw;
+    }
+    #toast-placement .top-0 {
+        top: 12rem !important;
+    }
+}
+@media screen and (min-width: 1366px) {
+    body {
+        background-image: url('https://res.cloudinary.com/the-hangry-elf/image/upload/v1639346606/media/img/stock_background_1620x1080_p9h0u0.png');
+    }
+    #paper,
+    .paper-banner {
+        min-width: 40vw;
+        max-width: 40vw;
+    }
+    #toast-placement .top-0 {
+        top: 18rem !important;
+    }
+}

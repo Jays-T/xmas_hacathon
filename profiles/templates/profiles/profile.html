@@ -7,16 +7,21 @@
 {% block content %}
 <!--Profile to render user's Advent Calendar-->
 <div class="row">
-    <div class="d-flex flex-column justify-content-center align-items-center" id="paper">
-        <h1><strong>Welcome {{ user.username }}!</strong></h1>
-        <h1>The situation is dire!</h1>
-        <h3>Santa's elves must feed!</h3>
-        <p>
-            Hurry, there is no time to lose! If we don't act fast
-            Santa will not have enough Christmas presents for all the children this year. <br>
-            It's entirely unfair, but he'll put you on the naughty list if you don't feed the hangry elves!!
-        </p>
-        <a href="{% url 'show_recipes' %}">Show Recipes</a>
+    <div class="d-flex flex-column justify-content-center align-items-center">
+        <div id="paper">
+            <h1><strong>Welcome {{ user.username }}!</strong></h1>
+            <h2>The situation is dire!</h2>
+            <h3>Santa's elves must feed!</h3>
+            <p>
+                Hurry, there is no time to lose! If we don't act fast
+                Santa will not have enough Christmas presents for all the children this year. <br>
+                It's entirely unfair, but he'll put you on the naughty list if you don't feed the hangry elves!!
+            </p>
+
+        </div>
+        <div class="paper-banner p-2">
+            <a class="p-5" href="{% url 'calendar' %}" id="profile-calendar-link">Save Christmas!</a>
+        </div>
     </div>
 </div>
 {% endblock %}
