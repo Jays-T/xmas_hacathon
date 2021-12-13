@@ -98,17 +98,20 @@ a:hover {
 /* Paper effect */
 
 #paper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     margin: 40px;
-    padding-top: 2rem;
-    min-width: 90vw;
-    max-width: 90vw;
+    padding: 2rem;
+    min-width: 85vw;
+    max-width: 85vw;
     height: 460px;
     background: url('https://res.cloudinary.com/the-hangry-elf/image/upload/v1639346605/media/img/paper_13631071_k8xbb7.png');
     border-radius: 12px;
     box-shadow: 0 15px 24px rgba(0,0,0,.7);
     z-index: -1;
     text-align: center;
-    font-size: 25px;
+    font-size: 1.2rem;
 }
 
 .paper-banner {
@@ -228,13 +231,36 @@ ul {
     section.container {
         padding-top: .8rem;
     }
+    #paper {
+        font-size: 1.7rem;
+    }
+    #paper,
+    .paper-banner {
+        min-width: 85vw;
+        max-width: 85vw;
+    }
+    #toast-placement .top-0 {
+        top: 8rem !important;
+    }
+
+}
+@media screen and (min-width: 1024px) {
+    #paper,
+    .paper-banner {
+        min-width: 60vw;
+        max-width: 60vw;
+    }
+    #toast-placement .top-0 {
+        top: 12rem !important;
+    }
+}
+@media screen and (min-width: 1366px) {
     #paper,
     .paper-banner {
         min-width: 40vw;
         max-width: 40vw;
     }
     #toast-placement .top-0 {
-        top: 8rem !important;
+        top: 18rem !important;
     }
-
 }

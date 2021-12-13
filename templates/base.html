@@ -7,7 +7,7 @@
     {% block meta %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta https-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="edge" https-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Site specific / SEO meta tags -->
     <meta name="keywords" content="christmas, xmas, x-mas, recipes, recipes, elves, hungry, hangry, fun, family, together, warm, fuzzy, activity, activities">
     <meta name="description" content="The Hangry Elf, Santa's elves are hangry, will you feed them in time to save Christmas?">
@@ -70,17 +70,17 @@
             </li>
             {% if request.user.is_authenticated %}
               <li class="nav-item mt-1">
-                <a href="{% url 'calendar' %}" class="nav-link">Save Christmas!</a>
+                <a href="{% url 'calendar' %}" class="nav-link" id="calendar">Save Christmas!</a>
               </li>
               <li class="nav-item mt-1">
-                <a href="{% url 'account_logout' %}" class="nav-link">Logout</a>
+                <a href="{% url 'account_logout' %}" class="nav-link" id="logout">Logout</a>
               </li>
               {% else %}
               <li class="nav-item mt-1">
-                <a href="{% url 'account_signup' %}" class="nav-link">Register</a>
+                <a href="{% url 'account_signup' %}" class="nav-link" id="register">Register</a>
               </li>
               <li class="nav-item mt-1">
-                <a href="{% url 'account_login' %}" class="nav-link">Login</a>
+                <a href="{% url 'account_login' %}" class="nav-link" id="login">Login</a>
               </li>
             {% endif %}
               <!-- Audio player -->
@@ -129,7 +129,6 @@
         </section>
     </section>
     <!-- Footer -->
-    <footer class="text-center bg-light w-100 p-0 m-0">
     <footer class="text-center text-lg-start bg-light w-100 mt-2">
       <!-- Grid container -->
       <div class="container p-4">
@@ -145,7 +144,6 @@
           <!--Grid column-->
           <div class="col-6 mb-0 mb-md-0">
             <h5 class="text-uppercase "><strong><i class="fas fa-candy-cane"></i> Find us <i class="fas fa-holly-berry"></i></strong></h5>
-
               <!-- Hidden bullets from: https://www.w3schools.com/howto/howto_css_list_without_bullets.asp -->
               <ul class="no-bullets"> 
                 <li>
@@ -164,7 +162,6 @@
                   <a href="https://github.com/ClaudiaLie" class="footer-link">Claudia Lai</a>
                 </li>
               </ul>
-            </p>
           </div>
           <!--Grid column-->
         </div>

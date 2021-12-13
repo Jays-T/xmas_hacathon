@@ -10,7 +10,7 @@
     <div class="d-flex flex-column justify-content-center align-items-center">
         <div id="paper">
             <h1><strong>Welcome {{ user.username }}!</strong></h1>
-            <h3>The situation is dire!</h2>
+            <h2>The situation is dire!</h2>
             <h3>Santa's elves must feed!</h3>
             <p>
                 Hurry, there is no time to lose! If we don't act fast
@@ -20,7 +20,7 @@
 
         </div>
         <div class="paper-banner p-2">
-            <a class="p-5" href="{% url 'calendar' %}">Save Christmas!</a>
+            <a class="p-5" href="{% url 'calendar' %}" id="profile-calendar-link">Save Christmas!</a>
         </div>
     </div>
 </div>
