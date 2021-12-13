@@ -1,8 +1,47 @@
-# The Hangry Elf
+![bannerimage](https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/readme_img/readmebannerpn.png)
 
+---
 ## Project: Code Institute December 2021 Hackathon: Happy Holidays
 
-## Introduction
+## Table of Contents
+
+<details>
+<summary>
+  Expand
+</summary>
+  
+  * [Introduction](#introduction)
+  * [User Experience (UX)](#user-experience-(ux))
+    * [User Stories](#user-stories)
+      * [Site Owner Goals](#site-owner-goals)
+      * [All Visitor Goals](#all-visitor-goals)
+      * [First Time Visitor Goals](#first-time-visitor-goals)
+      * [Returning Visitor Goals](#returning-visitor-goals)
+  * [Design](#design)
+  * [Wireframes](#wireframes)
+  * [Features](#features)
+  * [Technologies](#technologies)
+  * [Testing](#testing)
+    * [Testing Site Owner Goals](#testing-site-owner-goals)
+    * [Testing All Visitor Goals](#testing-all-visitor-goals)
+    * [Testing First Time Visitor Goals](#testing-all-visitor-goals)
+    * [Testing Returning Visitor Goals](#testing-returning-visitor-goals)
+    * [Validation Testing](#validation-testing)
+    * [Manual Testing](#manual-testing)
+    * [Cross Browser Testing](#cross-browser-testing)
+    * [Browser Testing](#browser-testing)
+    * [Device Testing](#device-testing)
+    * [Lighthouse Audit](#lighthouse-audit)
+  * [Deployment](#deployment)
+  * [Credits](#credits)
+    * [Inspiration](#inspiration)
+    * [Resources](#resources)
+    * [Media](#media)
+    * [Acknowledgements](#acknowledgements)
+    
+</details>
+ 
+### Introduction
 
 This website is the project for Code Institutes' December 2021 Hackathon created by John Traas, Claudia Lai, Marialena Livathinopoulou, David Paul Thompson and Adam Boley, collectively the team called The Newbies, since this is the first hackathon project undertaken by each member. 
 
@@ -13,7 +52,8 @@ The recipes are held in a linked database. When a user creates an account, the r
 The theme of The Hangry Elf is that Santa's most important Elf, Jimmy, is prone to getting hangry (possessed of a famous temper when his belly starts rumbling...). 
 To avoid this, Santa must ensure that Jimmy is fed a delicious dish every day so that all of the presents will be made in time, and that the sleigh is ready to go!
 
-## UX
+---
+## User Experience
 
 ### User Stories
 
@@ -27,7 +67,6 @@ To avoid this, Santa must ensure that Jimmy is fed a delicious dish every day so
 - Visitors must be able to navigate the site easily and intuitively
 - Visitors must be able to access the recipes and dishes by clicking on the recipe cards
 - Users must be able to recognise the dates of the cards
-- Users must be able to click on the card to display the dishes and recipes
 - Users must be able to hover over a card so that they can easily understand what card they are going to click
 - Users must be able to turn any music on or off with a clear button click
 
@@ -41,12 +80,14 @@ To avoid this, Santa must ensure that Jimmy is fed a delicious dish every day so
 - Returning visitors must be able to easily log into the site
 - Returning visitors, once logged in, must be able to see previously unlocked recipes
 
-
+---
 ## Design
-- Database planning and mapping out was done using <a href="https://dbdiagram.io/">Db Diagram</a>
-- ![image](https://user-images.githubusercontent.com/59046774/145722188-b6dbe9cc-257d-421e-b6d0-d68092e83e1f.png)
 
+Database planning and mapping out was done using <a href="https://dbdiagram.io/">Db Diagram</a>: 
 
+![image](https://user-images.githubusercontent.com/59046774/145722188-b6dbe9cc-257d-421e-b6d0-d68092e83e1f.png)
+
+---
 ## Wireframes
 
 The Wireframe.cc app was used to plan out the basic design and look of the project. We found it useful because David, the designated wireframe designer for the project, could share his screen during Slack calls and each call participant could draw on the wireframe to outline their ideas. The wireframe images are located in the wireframes folder in the .assets folder
@@ -67,26 +108,31 @@ Links to the wireframes are below:
 
 [Recipe](https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/wireframes/Recipe.png)
 
-
+---
 ## Features
 
-## Technologies
+### Technologies
 
-The Hangry Elf was primarily created using the HTML, CSS and Python programming languages. Python was used because several of the team preferred Python over JavaScript. 
+The Hangry Elf was primarily created using the HTML, CSS and Python programming languages. 
+Python was used because several of the team preferred Python over JavaScript. 
 Platforms used:
-- Github: Github was used to store the project files, and to allow each team member to be added as a contributor to the project. The Projects tab of the repository was used to note down initial ideas for the project, assign tasks and track progress.
-- Gitpod: The Gitpod IDE was used to create and edit the project files, and could convientially be accessed directly from Github. Git version control proved useful as each member was working on different aspects of the site, and an informal goal of the team was to have each member both submit and approve a pull request from the main repository
-- Bootstrap 5.0: Bootstrap was used to provide the initial project template.
-- Django: Django was used as the technology framework, and provided the template for allowing the user to login to the site.
-- Heroku: Heroku was used to deploy the project.
-- Slack: Slack was used to coordinate the actions of the team, discuss ideas and share links. 
-- Google Docs: The team created and shared a Google Doc to note down ideas and store recipe links.
-- Font Awesome: Font Awesone was used for the site's icons.
-- Google Fonts: Google Fonts was used for the site's font. The Mountains of Christmas font was used.
-- Cloudinary: Used to host the site's static files.
+- [Github](https://github.com/): Github was used to store the project files, and to allow each team member to be added as a contributor to the project. The Projects tab of the repository was used to note down initial ideas for the project, assign tasks and track progress.
+- [Gitpod](https://www.gitpod.io/): The Gitpod IDE was used to create and edit the project files, and could convientially be accessed directly from Github. Git version control proved useful as each member was working on different aspects of the site, and an informal goal of the team was to have each member both submit and approve a pull request from the main repository
+- [Bootstrap 5.0](https://getbootstrap.com/docs/5.0/getting-started/introduction/): Bootstrap was used to provide the initial project template.
+- [Django](https://docs.djangoproject.com/en/4.0/): Django was used as the technology framework, and provided the template for allowing the user to login to the site.
+- [Heroku](https://www.heroku.com/): Heroku was used to deploy the project.
+- [Slack](https://slack.com/): Slack was used to coordinate the actions of the team, discuss ideas and share links. 
+- [Google Docs](https://www.google.com/docs/about/): The team created and shared a Google Doc to note down ideas and store recipe links.
+- [Font Awesome](https://fontawesome.com/): Font Awesone was used for the site's icons.
+- [Google Fonts](https://fonts.google.com/): Google Fonts was used for the site's font. The Mountains of Christmas font was used.
+- [Cloudinary](https://cloudinary.com/): Used to host the site's static files.
 
+---
 ## Testing
 
+### Manual testing
+
+The Hangry Elf was manually tested throughout its development to ensure that each of the [user stories](#user-stories) was fulfilled. The user stories are noted below, along with the results of the testing.
 
 ### Testing Site Owner Goals
 
@@ -102,19 +148,16 @@ Platforms used:
 - The site has clear links at the top of the pages
 
 #### Visitors must be able to access the recipes and dishes by clicking on the recipe cards
-- 
+- Each card contains an "unlock" button to access the recipes
 
 #### Users must be able to recognise the dates of the cards
-- 
-
-#### Users must be able to click on the card to display the dishes and recipes
-- 
+- The date is displayed on the card
 
 #### Users must be able to hover over a card so that they can easily understand what card they are going to click
 - The cards on the Advent Calendar page have hover effects that cease when the mouse is removed from over the card
 
 #### Users must be able to turn any music on or off with a clear button click
-- The music is controlled by a standard control panel
+- The music is controlled by a standard control panel in the header with clear, intuitive buttons. 
 
 ### Testing First Time Visitor Goals
 
@@ -127,46 +170,33 @@ Platforms used:
 ### Testing Returning Visitor Goals
 
 #### Returning visitors must be able to easily log into the site
-- The main landing page has a login link that is prominent, and allows a returning user to login to the site easily
+- The main landing page has a log-in link that is displayed prominently in the header, and allows a returning user to log-in to the site easily
 
 #### Returning visitors, once logged in, must be able to see previously unlocked recipes
-- 
+- On the advent calendar page, a logged-in returning user can see their progress through the advent calendar as previously unlocked recipes are marked by a green checkmark
 
-### Platform Testing - Desktop / Laptop
-
-#### Google Chrome
-- All tested and working correctly
-
-#### Microsoft Edge
-- 
-
-#### Safari
--
-
-#### Mozilla Firefox
--
-
-## Validation Testing
+### Validation Testing
 The following websites have been used to validate the code being used on the website. The original code has been tested to ensure the functionality of the website. This will detect any syntax errors if provided and ensure the website is functioning correctly for the developer and the users of the webpage. 
 - JavaScript - https://jshint.com/
+  - None
+
 - HTML - https://validator.w3.org/
+  - 1 errors and 1 warning were noted, but left uncorrected due to preserve the integrity and function of the website
+
 - CSS - https://jigsaw.w3.org/css-validator/
+  - No errors found
+
 - Lighthouse - https://developers.google.com/web/tools/lighthouse/?utm_source=devtools
+  - 
 
-## User Stories Testing
+---
 
-## Manual testing
-The use of manual testing ensures the results are correct and accurate at the time and can identify errors displayed which can be looked into further if necessary. From clicking items to completing full check outs on the website.  Provided below is a list of testing requirements to which will enable us to confirm the website is working to its full potential.  This will help confirm the site is working as required from the designing and creating aspect of the website development.
-Testing Client Stories from UX Section
-Manually testing was completed to ensure the website met the user/ user stories requirements. 
-This would ensure testing the user stories we have covered the website requirements for the user the functionality, visual and usage responsiveness.
-This would help to provide an indication to the level of the web site was working and if it completed all the requirements necessary
- 
-
-## Cross Browser Testing
-The use of multiple web browsers allows us to check and test the functionality across different platforms and user interfaces.  The types of web browsers we used were web browsers and mobile devices. This will be due to the responsive testing required to ensure this works for all users.
+### Cross Browser Testing
+The use of multiple web browsers allows us to check and test the functionality across different platforms and user interfaces. The types of web browsers we used were web browsers and mobile devices. This will be due to the responsive testing required to ensure this works for all users.
 
 Testing will ensure the website is suitable and the website has been thoroughly checked for any users. A list of actions required to be available for the website have been provided below.
+
+The Chrome Dev Tools were also used to ensure that the Hangry Elf was responsive when viewed on desktops, smartphones and tablets. The most common desktop and laptop browsers - Chrome, Microsoft Edge, Safari and Mozilla Firefox - were used to view the site to ensure that all users could use the site unimpeded.
 
 - register details on the website and access a profile
 - login and logout the website securely
@@ -179,13 +209,13 @@ Testing will ensure the website is suitable and the website has been thoroughly 
 - ensure the square selected displays the card with all the information
 - add a superuser
 
-## Browser Testing
+### Browser Testing
 
 [Browser Testing Table 1](https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/test/Test1.png)
 
 [Browser Testing Table 2](https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/test/Test2.png)
 
-## Device Testing
+### Device Testing
 
 To enable all device were tested and various device were explored tablets and mobiles were considered to test the game on. This would ensure this works on multiple devices.
 
@@ -193,7 +223,7 @@ To enable all device were tested and various device were explored tablets and mo
 
 [Mobile Testing Table 2](https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/test/Test4.png)
 
-## Lighthouse Audit
+### Lighthouse Audit
 
 “Identify and fix common problems that affect your sites performance, accessibility, and user experience.”
 
@@ -222,19 +252,19 @@ The website has been tested with the lighthouse function to provide the website 
 
 
 
-### Lighthouse Audit
-
+---
 ## Deployment
 
 The project was deployed using Heroku. The static files were hosted on Cloudinary. 
 
+---
 ## Credits
 
 ### Inspiration
 
 The Winner of the Code Institute November 2021 Hackathon was agreed by all team members to have extensive documentation, and was used as a rough template for this project's documentation. 
 
-### Resources
+### Recipes
 
 - [BBC Good Food](https://www.bbcgoodfood.com/), for many of the Christmas-themed recipes used in the project
 
@@ -246,9 +276,13 @@ The Winner of the Code Institute November 2021 Hackathon was agreed by all team 
 
 ### Media 
 
-- Track name: A Christmas Dance
-- Artist: Arthur Benson
-- Retrieved from: [Epidemic Sound](https://www.epidemicsound.com/track/yRFwYp70k9/)
+* Audio
+  - Track name: A Christmas Dance
+  - Artist: Arthur Benson
+  - Retrieved from: [Epidemic Sound](https://www.epidemicsound.com/track/yRFwYp70k9/)
+
+* Images
+  - [Adobe Stock Images](https://stock.adobe.com/)
 
 ### Acknowledgements
 
@@ -261,4 +295,4 @@ The Winner of the Code Institute November 2021 Hackathon was agreed by all team 
 
   - [David Paul Thompson](https://github.com/tomod24)
 
-  - [Adam Boley](https://github.com/AdamBoley)
+  - [Adam Boley](https://github.com/AdamBoley) (and his cat)
