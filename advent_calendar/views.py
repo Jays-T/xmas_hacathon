@@ -107,7 +107,6 @@ def create_advent(request):
     template = 'advent_calendar/advent.html'
     context = {
         'calendar': users_calendar,
-        'days': has_days,
         'current_date': date_today
     }
 
@@ -125,5 +124,28 @@ def naughty(request):
 
     messages.add_message(request, naughty, "Now now, be careful or you'll be\
                                             put on the NAUGHTY list....")
+
+    return(redirect(reverse(advent)))
+
+
+@login_required
+def set_day_recipe_complete(request, day_id, calendar_id):
+
+    Day.objects.filter(id=day_id).update(done=True)
+
+    profile = get_object_or_404(UserProfile, user=request.user)
+    try:
+        users_calendar = profile.user_advent_calendar.get()
+    except ObjectDoesNotExist:
+        messages.error(request, "We can't find your calendar!")
+        return(redirect(reverse(advent)))
+
+    try:
+        done_count = users_calendar.days.filter(done=True).count()
+        messages.success(request, f'What a tasty treat that was!\
+                               You have completed {done_count} recipes\
+                                so far. Well done!')
+    except ObjectDoesNotExist:
+        messages.error(request, "You haven't done any recipes yet!")
 
     return(redirect(reverse(advent)))
