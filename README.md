@@ -1,8 +1,16 @@
 ![bannerimage](https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/readme_img/readmebannerpn.png)
 
-## Project: Code Institute December 2021 Hackathon: Happy Holidays
 ---
+## Project: Code Institute December 2021 Hackathon: Happy Holidays
 
+## Table of Content
+
+<details><summary>Expand</summary>
+<p>
+ 1. [Introduction](#introduction)
+ 2. 
+</details>
+ 
 ### Introduction
 
 This website is the project for Code Institutes' December 2021 Hackathon created by John Traas, Claudia Lai, Marialena Livathinopoulou, David Paul Thompson and Adam Boley, collectively the team called The Newbies, since this is the first hackathon project undertaken by each member. 
@@ -14,8 +22,8 @@ The recipes are held in a linked database. When a user creates an account, the r
 The theme of The Hangry Elf is that Santa's most important Elf, Jimmy, is prone to getting hangry (possessed of a famous temper when his belly starts rumbling...). 
 To avoid this, Santa must ensure that Jimmy is fed a delicious dish every day so that all of the presents will be made in time, and that the sleigh is ready to go!
 
-## UX
 ---
+## UX
 
 ### User Stories
 
@@ -43,17 +51,15 @@ To avoid this, Santa must ensure that Jimmy is fed a delicious dish every day so
 - Returning visitors must be able to easily log into the site
 - Returning visitors, once logged in, must be able to see previously unlocked recipes
 
-
-## Design
 ---
+## Design
 
 Database planning and mapping out was done using <a href="https://dbdiagram.io/">Db Diagram</a>: 
 
 ![image](https://user-images.githubusercontent.com/59046774/145722188-b6dbe9cc-257d-421e-b6d0-d68092e83e1f.png)
 
-
-## Wireframes
 ---
+## Wireframes
 
 The Wireframe.cc app was used to plan out the basic design and look of the project. We found it useful because David, the designated wireframe designer for the project, could share his screen during Slack calls and each call participant could draw on the wireframe to outline their ideas. The wireframe images are located in the wireframes folder in the .assets folder
 
@@ -73,9 +79,8 @@ Links to the wireframes are below:
 
 [Recipe](https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/wireframes/Recipe.png)
 
-
-## Features
 ---
+## Features
 
 ### Technologies
 
@@ -93,8 +98,8 @@ Platforms used:
 - [Google Fonts](https://fonts.google.com/): Google Fonts was used for the site's font. The Mountains of Christmas font was used.
 - [Cloudinary](https://cloudinary.com/): Used to host the site's static files.
 
-## Testing
 ---
+## Testing
 
 ### Testing Site Owner Goals
 
@@ -154,7 +159,7 @@ Platforms used:
 #### Mozilla Firefox
 -
 
-## Validation Testing
+### Validation Testing
 The following websites have been used to validate the code being used on the website. The original code has been tested to ensure the functionality of the website. This will detect any syntax errors if provided and ensure the website is functioning correctly for the developer and the users of the webpage. 
 - JavaScript - https://jshint.com/
 - HTML - https://validator.w3.org/
@@ -163,7 +168,6 @@ The following websites have been used to validate the code being used on the web
 
 ---
 ## User Stories Testing
----
 
 ### Manual testing
 The use of manual testing ensures the results are correct and accurate at the time and can identify errors displayed which can be looked into further if necessary. From clicking items to completing full check outs on the website.  Provided below is a list of testing requirements to which will enable us to confirm the website is working to its full potential.  This will help confirm the site is working as required from the designing and creating aspect of the website development.
@@ -236,13 +240,11 @@ The website has been tested with the lighthouse function to provide the website 
 
 ---
 ## Deployment
----
 
 The project was deployed using Heroku. The static files were hosted on Cloudinary. 
 
 ---
 ## Credits
----
 
 ### Inspiration
 
