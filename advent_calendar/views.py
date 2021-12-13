@@ -45,7 +45,7 @@ def advent(request):
 
 @login_required
 def create_advent(request):
-    """ 
+    """
     A view to return calendar page
     Will create advent calendar for user
     Will create a unique Day object for each day of the first 25 days in December
