@@ -4,13 +4,7 @@
 body {
     min-height: 100vh;
     min-width: 100vw;
-    background-image: url('https://res.cloudinary.com/the-hangry-elf/image/upload/v1639346606/media/img/stock_background_1620x1080_p9h0u0.png');
-    background-position: bottom;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: aliceblue;
     font-family: 'Mountains of Christmas', cursive;
     font-size: 20px;
     letter-spacing: .1rem;
@@ -106,7 +100,7 @@ a:hover {
     min-width: 85vw;
     max-width: 85vw;
     height: 540px;
-    background: url('https://res.cloudinary.com/the-hangry-elf/image/upload/v1639346605/media/img/paper_13631071_k8xbb7.png') no-repeat;
+    background: url('https://res.cloudinary.com/the-hangry-elf/image/upload/v1639376541/media/img/paper_13631071_ysup2q.webp') no-repeat;
     background-size: cover;
     border-radius: 12px;
     box-shadow: 0 15px 24px rgba(0,0,0,.7);
@@ -117,7 +111,7 @@ a:hover {
 
 .paper-banner {
     position: relative;
-    background: url('https://res.cloudinary.com/the-hangry-elf/image/upload/v1639346605/media/img/paper_13631071_k8xbb7.png') no-repeat;
+    background: url('https://res.cloudinary.com/the-hangry-elf/image/upload/v1639376541/media/img/paper_13631071_ysup2q.webp') no-repeat;
     background-size: cover;
     border-radius: 12px;
     box-shadow: 0 15px 24px rgba(0,0,0,.7);
@@ -229,6 +223,15 @@ ul {
     }
   }
 @media screen and (min-width: 768px) {
+    body {
+        background-image: url('https://res.cloudinary.com/the-hangry-elf/image/upload/v1639375385/media/img/stock_background_740x1080_nv7gqd.png');
+        background-position: bottom;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
     section.container {
         padding-top: .8rem;
     }
@@ -256,6 +259,9 @@ ul {
     }
 }
 @media screen and (min-width: 1366px) {
+    body {
+        background-image: url('https://res.cloudinary.com/the-hangry-elf/image/upload/v1639346606/media/img/stock_background_1620x1080_p9h0u0.png');
+    }
     #paper,
     .paper-banner {
         min-width: 40vw;
