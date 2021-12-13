@@ -187,29 +187,27 @@ The following websites have been used to validate the code being used on the web
   - No errors found
 
 - Lighthouse - https://developers.google.com/web/tools/lighthouse/?utm_source=devtools
-  - 
 
 ---
 
 ### Cross Browser Testing
-The use of multiple web browsers allows us to check and test the functionality across different platforms and user interfaces. The types of web browsers we used were web browsers and mobile devices. This will be due to the responsive testing required to ensure this works for all users.
 
-Testing will ensure the website is suitable and the website has been thoroughly checked for any users. A list of actions required to be available for the website have been provided below.
+The Chrome Dev Tools were used to ensure that the Hangry Elf was responsive when viewed on desktop browsers. The most common desktop and laptop browsers - Google Chrome, Microsoft Edge, Safari and Mozilla Firefox - were used to view the site to ensure that all users could use the site unimpeded. The functions that must work regardless of browser are below:
 
-The Chrome Dev Tools were also used to ensure that the Hangry Elf was responsive when viewed on desktops, smartphones and tablets. The most common desktop and laptop browsers - Chrome, Microsoft Edge, Safari and Mozilla Firefox - were used to view the site to ensure that all users could use the site unimpeded.
-
-- register details on the website and access a profile
-- login and logout the website securely
-- navigate the site easily and intuitively
-- access the recipes and dishes by clicking on the recipe cards
-- recognise the dates of the cards
-- click on the card to display the dishes and recipes
-- hover over a card so that they can easily understand what card they are going to click
-- ability to mute or unmute the music
-- ensure the square selected displays the card with all the information
-- add a superuser
+- Register details on the website and access a profile
+- Login and logout the website securely
+- Navigate the site easily and intuitively
+- Access the recipes and dishes by clicking on the recipe cards
+- Recognise the dates of the cards
+- Click on the card to display the dishes and recipes
+- Hover over a card so that they can easily understand what card they are going to click
+- Ability to mute or unmute the music
+- Ensure the square selected displays the card with all the information
+- Add a superuser
 
 ### Browser Testing
+
+Below are the browser testing tables. Table 1 is for Google Chrome and Firefox. Table 2 is for Microsoft Edge and Safari
 
 [Browser Testing Table 1](https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/test/Test1.png)
 
@@ -217,7 +215,7 @@ The Chrome Dev Tools were also used to ensure that the Hangry Elf was responsive
 
 ### Device Testing
 
-To enable all device were tested and various device were explored tablets and mobiles were considered to test the game on. This would ensure this works on multiple devices.
+Below are the mobile device testing tables. Table 1 is for the iPad Pro and the Google Pixel 2. Table 2 is for the Huawei P20 Pro and Samsung Galaxy Pro
 
 [Mobile Testing Table 1](https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/test/Test3.png)
 
@@ -225,32 +223,34 @@ To enable all device were tested and various device were explored tablets and mo
 
 ### Lighthouse Audit
 
-“Identify and fix common problems that affect your sites performance, accessibility, and user experience.”
+“Identify and fix common problems that affect your sites' performance, accessibility, and user experience.”
 
-Accessibility testing is key to checking the site functional and ensuring the site is running to its maximum performance. The lighthouse audit will provide accurate information from scanning the website and provide the finding of the website functioning. This can be selected by using the development tool and generating a report on a selected device
-
-This can be mobile or desktop devices.
+Accessibility testing is key to checking that the site is functional, and ensuring that the site is running at maximum performance. The Lighthouse audit provides accurate information from scanning the website and providing a finding of the website's functionality. The Lighthouse tests can be run by opening the Chrome Dev Tools (F12 or right-click, then Inspect), and then generating a report for either desktop or mobile devices.
 
 [Lighthouse Audit](https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/lighthouse/LighthouseAudit.png)
 
-Here are the results from the lighthouse audit on mobile devices.  Mobile devices show the responsiveness on the website and websites are based on the mobile responsiveness.
+Below is the result from the Lighthouse audit for mobile devices. The audit shows that the site initially had excellent performance on mobile devices.
 
 [Lighthouse Mobile First Result](https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/lighthouse/LighthouseMobile.png)
 
-The results for desktop lighthouse audit is as followed. As this is a early lighthouse review we want to see the improvements to the website when developing and improving the code on the website. This will be completed at the end of the website completion.
+Below is the result from the Lighthouse audit for desktop devices. The audit shows that the site initially had good but not excellent performance on desktop devices.
 
 [Lighthouse Desktop First Result](https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/lighthouse/LighthouseDesktop.png)
 
-The website has been tested with the lighthouse function to provide the website functionality and performance score. As a result, some improvements were made to the desktop and mobile display on the website and the results have improved. The website presented has a clean feel for users and it’s not too difficult to navigate and use the website features.
+As a result of these audits, some improvements were made to the desktop and mobile display on the website. The website has a clean feel for users, and is easy for users to both navigate and use the features of the website.
 
 
-### MobileLighthouse Audit Latest Result
+### Mobile Lighthouse Audit Final Result
 
- 
+Below is the result from the final Lighthouse audit for mobile devices. The audit shows that the final iteration ofthe website of has excellent performance on mobile devices
 
-### Desktop Lighthouse Audit Latest Result
+[Lighthouse Mobile Final Result](https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/lighthouse/LighthouseMobileFinal.png)
 
+### Desktop Lighthouse Audit Final Result
 
+Below is the result from the final Lighthouse audit for desktops devices. The audit shows that the final iteration ofthe website of has excellent performance on desktop devices
+
+[Lighthouse Desktop Final Result](https://github.com/Anelairam/xmas_hacathon/blob/main/.assets/lighthouse/LighthouseDesktopFinal.png)
 
 ---
 ## Deployment
@@ -268,7 +268,7 @@ The Winner of the Code Institute November 2021 Hackathon was agreed by all team 
 
 - [BBC Good Food](https://www.bbcgoodfood.com/), for many of the Christmas-themed recipes used in the project
 
-- [Tastes of Home](https://www.tasteofhome.com/)
+- [Tastes of Home](https://www.tasteofhome.com/), for the traditional Jewish dishes
 
 - [Delish](https://www.delish.com/)
 
@@ -283,6 +283,9 @@ The Winner of the Code Institute November 2021 Hackathon was agreed by all team 
 
 * Images
   - [Adobe Stock Images](https://stock.adobe.com/)
+  - [Clip Art Max](https://www.clipartmax.com/)
+    - * Toast images
+    - * Custom 404 error pages
 
 ### Acknowledgements
 
