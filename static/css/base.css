@@ -28,7 +28,7 @@ section.container {
     margin: 0;
 }
 
-.nav-link , .footer-link {
+.nav-link, .footer-link {
     color:#004700;
 }
 
@@ -68,10 +68,10 @@ a:hover {
 /* Paper effect */
 
 #paper {
-    position: relative;
-    margin: 40px auto;
-    width: 700px;
-    height: 450px;
+    margin: 40px;
+    padding-top: 2rem;
+    width: 40rem;
+    height: 460px;
     background: url('/media/img/paper_13631071.png');
     border-radius: 12px;
     box-shadow: 0 15px 24px rgba(0,0,0,.7);
