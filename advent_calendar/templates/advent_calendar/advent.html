@@ -20,7 +20,7 @@
                 <h5 class="card-header">{{ day.date }}</h5>
                 <div class="card-body d-flex justify-content-center align-items-center">
                     {% if day.date <= current_date %}
-                    <a href="{% url 'show_recipe' day.days_recipe.id %}" class="btn btn-primary" aria-disabled="false">Unlock</a>
+                    <a href="{% url 'show_recipe' day.days_recipe.id %}" class="btn btn-success" aria-disabled="false">Unlock</a>
                     {% else %}
                     <a href="{% url 'naughty' %}" class="btn btn-secondary" disabled aria-disabled="true">Locked</a>
                     {% endif %}
